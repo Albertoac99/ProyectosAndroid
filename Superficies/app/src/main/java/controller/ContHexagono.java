@@ -1,19 +1,19 @@
 package controller;
 
 import logic.LogSuperficies;
-import view.Hexagono;
+import view.SupHexagono;
 
 public class ContHexagono {
     public static void areaHexagono() {
 
-        String lado = Hexagono.etxtLadoHexagono.getText().toString();
-        String apotema = Hexagono.etxtApotemaHexagono.getText().toString();
+        String lado = SupHexagono.etxtLadoHexagono.getText().toString();
+        String apotema = SupHexagono.etxtApotemaHexagono.getText().toString();
 
         if(lado.equals("") || apotema.equals("")){
-            LogSuperficies.mostrarMensaje(Hexagono.context);
+            LogSuperficies.mostrarMensaje(SupHexagono.context);
         }
         else{
-            Hexagono.txtAreaHexagono.setText(""+ LogSuperficies.areaHexagono());
+            SupHexagono.txtAreaHexagono.setText(""+ LogSuperficies.areaHexagono());
         }
 
     }

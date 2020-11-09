@@ -9,12 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Superficies">
-        <activity android:name="view.Triangulo"></activity>
-        <activity android:name="view.Trapecio" />
-        <activity android:name="view.Pentagono" />
-        <activity android:name="view.Hexagono" />
-        <activity android:name="view.Circulo" />
-        <activity android:name="view.Rectangulo" />
+        <activity android:name="view.SupTriangulo"></activity>
+        <activity android:name="view.SupTrapecio" />
+        <activity android:name="view.SupPentagono" />
+        <activity android:name="view.SupHexagono" />
+        <activity android:name="view.SupCirculo" />
+        <activity android:name="view.SupRectangulo" />
         <activity android:name="view.Superficies">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

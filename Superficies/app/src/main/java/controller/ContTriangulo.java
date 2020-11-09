@@ -1,20 +1,20 @@
 package controller;
 
 import logic.LogSuperficies;
-import view.Triangulo;
+import view.SupTriangulo;
 
 public class ContTriangulo {
     public static void areaTriangulo() {
-        String base = Triangulo.etxtBaseTriangulo.getText().toString();
-        String altura = Triangulo.etxtAlturaTriangulo.getText().toString();
+        String base = SupTriangulo.etxtBaseTriangulo.getText().toString();
+        String altura = SupTriangulo.etxtAlturaTriangulo.getText().toString();
 
         if (base.equals("") || altura.equals("")) {
 
-            LogSuperficies.mostrarMensaje(Triangulo.context);
+            LogSuperficies.mostrarMensaje(SupTriangulo.context);
         }
         else{
 
-            Triangulo.txtAreaTriangulo.setText(""+ LogSuperficies.areaTriangulo());
+            SupTriangulo.txtAreaTriangulo.setText(""+ LogSuperficies.areaTriangulo());
         }
     }
 }

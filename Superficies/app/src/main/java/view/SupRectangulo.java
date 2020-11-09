@@ -13,7 +13,7 @@ import com.aranda.superficies.R;
 
 import controller.ContRectangulo;
 
-public class Rectangulo extends AppCompatActivity {
+public class SupRectangulo extends AppCompatActivity {
 
     public static EditText etxtBaseRectangulo;
     public static EditText etxtAlturaRectangulo;

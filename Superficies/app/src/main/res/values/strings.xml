@@ -1,11 +1,11 @@
 <resources>
-    <string name="app_name">Superficies</string>
-    <string name="lado">Lado</string>
-    <string name="apotema">Apotema</string>
+    <string name="app_name">Surfaces</string>
+    <string name="lado">Side</string>
+    <string name="apotema">Apothem</string>
     <string name="base">Base</string>
-    <string name="radio">Radio</string>
-    <string name="basesuperior">Base Superior</string>
-    <string name="altura">Altura</string>
-    <string name="boton">Calcular</string>
+    <string name="radio">Radius</string>
+    <string name="basesuperior">Top Base</string>
+    <string name="altura">Height</string>
+    <string name="boton">Calculate</string>
     <string name="resultado">XXX</string>
 </resources>

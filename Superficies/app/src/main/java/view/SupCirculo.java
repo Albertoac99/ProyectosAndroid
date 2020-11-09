@@ -13,7 +13,7 @@ import com.aranda.superficies.R;
 
 import controller.ContCirculo;
 
-public class Circulo extends AppCompatActivity {
+public class SupCirculo extends AppCompatActivity {
 
     public static Context context;
     public static EditText etxtRadioCirculo;

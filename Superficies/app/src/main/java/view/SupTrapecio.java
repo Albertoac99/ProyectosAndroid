@@ -13,7 +13,7 @@ import com.aranda.superficies.R;
 
 import controller.ContTrapecio;
 
-public class Trapecio extends AppCompatActivity {
+public class SupTrapecio extends AppCompatActivity {
 
     public static EditText etxtAlturaTrapecio;
     public static EditText etxtBaseTrapecio;

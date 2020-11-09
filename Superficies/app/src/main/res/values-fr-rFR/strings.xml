@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Surfaces</string>
+    <string name="boton">Calculer</string>
+    <string name="altura">Hauteur</string>
+    <string name="basesuperior">Base Supérieure</string>
+    <string name="radio">Rayon</string>
+    <string name="base">Base</string>
+    <string name="apotema">Apothème</string>
+    <string name="lado">Côté</string>
+    <string name="resultado">XXX</string>
+</resources>

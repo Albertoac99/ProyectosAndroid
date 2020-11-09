@@ -1,16 +1,16 @@
 package controller;
 
 import logic.LogSuperficies;
-import view.Circulo;
+import view.SupCirculo;
 
 public class ContCirculo {
     public static void areaCirculo() {
-        String radio = Circulo.etxtRadioCirculo.getText().toString();
+        String radio = SupCirculo.etxtRadioCirculo.getText().toString();
         if(radio.equals("")){
-            LogSuperficies.mostrarMensaje(Circulo.context);
+            LogSuperficies.mostrarMensaje(SupCirculo.context);
         }
         else{
-            Circulo.txtAreaCirculo.setText(""+ LogSuperficies.areaCirculo());
+            SupCirculo.txtAreaCirculo.setText(""+ LogSuperficies.areaCirculo());
         }
     }
 }

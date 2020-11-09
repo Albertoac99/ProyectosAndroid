@@ -1,16 +1,14 @@
 package logic;
 
 import android.content.Context;
-import android.graphics.Rect;
-import android.widget.EditText;
 import android.widget.Toast;
 
-import view.Circulo;
-import view.Hexagono;
-import view.Pentagono;
-import view.Rectangulo;
-import view.Trapecio;
-import view.Triangulo;
+import view.SupCirculo;
+import view.SupHexagono;
+import view.SupPentagono;
+import view.SupRectangulo;
+import view.SupTrapecio;
+import view.SupTriangulo;
 
 public class LogSuperficies {
 
@@ -18,7 +16,7 @@ public class LogSuperficies {
 
     public static double areaCirculo() {
 
-        Double radio = Double.parseDouble(Circulo.etxtRadioCirculo.getText().toString());
+        Double radio = Double.parseDouble(SupCirculo.etxtRadioCirculo.getText().toString());
 
         Double resultado = Math.pow(radio,2) * PI;
 
@@ -27,9 +25,9 @@ public class LogSuperficies {
 
     public static double areaHexagono() {
 
-        Double perimetro = Double.parseDouble(Hexagono.etxtLadoHexagono.getText().toString())*6;
+        Double perimetro = Double.parseDouble(SupHexagono.etxtLadoHexagono.getText().toString())*6;
 
-        Double apotema = Double.parseDouble(Hexagono.etxtApotemaHexagono.getText().toString());
+        Double apotema = Double.parseDouble(SupHexagono.etxtApotemaHexagono.getText().toString());
 
         Double resultado = (perimetro * apotema) / 2;
 
@@ -38,9 +36,9 @@ public class LogSuperficies {
 
     public static double areaPentagono() {
 
-        Double perimetro = Double.parseDouble(Pentagono.etxtLadoPentagono.getText().toString())*5;
+        Double perimetro = Double.parseDouble(SupPentagono.etxtLadoPentagono.getText().toString())*5;
 
-        Double apotema = Double.parseDouble(Pentagono.etxtApotemaPentagono.getText().toString());
+        Double apotema = Double.parseDouble(SupPentagono.etxtApotemaPentagono.getText().toString());
 
         Double resultado = (perimetro * apotema) /2;
 
@@ -49,9 +47,9 @@ public class LogSuperficies {
 
     public static double areaRectangulo() {
 
-        Double base = Double.parseDouble(Rectangulo.etxtBaseRectangulo.getText().toString());
+        Double base = Double.parseDouble(SupRectangulo.etxtBaseRectangulo.getText().toString());
 
-        Double altura = Double.parseDouble(Rectangulo.etxtAlturaRectangulo.getText().toString());
+        Double altura = Double.parseDouble(SupRectangulo.etxtAlturaRectangulo.getText().toString());
 
         Double resultado = base * altura;
 
@@ -60,11 +58,11 @@ public class LogSuperficies {
 
     public static double areaTrapecio() {
 
-        Double base = Double.parseDouble(Trapecio.etxtBaseTrapecio.getText().toString());
+        Double base = Double.parseDouble(SupTrapecio.etxtBaseTrapecio.getText().toString());
 
-        Double baseSuperior = Double.parseDouble(Trapecio.etxtBaseSuperiorTrapecio.getText().toString());
+        Double baseSuperior = Double.parseDouble(SupTrapecio.etxtBaseSuperiorTrapecio.getText().toString());
 
-        Double altura = Double.parseDouble(Trapecio.etxtAlturaTrapecio.getText().toString());
+        Double altura = Double.parseDouble(SupTrapecio.etxtAlturaTrapecio.getText().toString());
 
         Double resultado = ((base + baseSuperior) /2)*altura;
 
@@ -73,9 +71,9 @@ public class LogSuperficies {
 
     public static double areaTriangulo() {
 
-        Double base = Double.parseDouble(Triangulo.etxtBaseTriangulo.getText().toString());
+        Double base = Double.parseDouble(SupTriangulo.etxtBaseTriangulo.getText().toString());
 
-        Double altura = Double.parseDouble(Triangulo.etxtAlturaTriangulo.getText().toString());
+        Double altura = Double.parseDouble(SupTriangulo.etxtAlturaTriangulo.getText().toString());
 
         Double resultado = (base * altura) / 2;
 

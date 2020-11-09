@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ListaProductos</string>
+    <string name="nombre">NOMBRE_PRODUCTO</string>
+    <string name="precio">PRECIO €</string>
 </resources>

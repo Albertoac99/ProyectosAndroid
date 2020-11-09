@@ -1,21 +1,21 @@
 package controller;
 
 import logic.LogSuperficies;
-import view.Trapecio;
+import view.SupTrapecio;
 
 public class ContTrapecio {
     public static void areaTrapecio() {
-        String base = Trapecio.etxtBaseTrapecio.getText().toString();
-        String baseSuperior = Trapecio.etxtBaseSuperiorTrapecio.getText().toString();
-        String altura = Trapecio.etxtAlturaTrapecio.getText().toString();
+        String base = SupTrapecio.etxtBaseTrapecio.getText().toString();
+        String baseSuperior = SupTrapecio.etxtBaseSuperiorTrapecio.getText().toString();
+        String altura = SupTrapecio.etxtAlturaTrapecio.getText().toString();
 
         if (base.equals("") || altura.equals("") || baseSuperior.equals("")) {
 
-            LogSuperficies.mostrarMensaje(Trapecio.context);
+            LogSuperficies.mostrarMensaje(SupTrapecio.context);
         }
         else{
 
-            Trapecio.txtAreaTrapecio.setText(""+ LogSuperficies.areaTrapecio());
+            SupTrapecio.txtAreaTrapecio.setText(""+ LogSuperficies.areaTrapecio());
         }
     }
 }

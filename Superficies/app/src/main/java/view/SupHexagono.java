@@ -13,7 +13,7 @@ import com.aranda.superficies.R;
 
 import controller.ContHexagono;
 
-public class Hexagono extends AppCompatActivity {
+public class SupHexagono extends AppCompatActivity {
 
     public static EditText etxtLadoHexagono;
     public static EditText etxtApotemaHexagono;

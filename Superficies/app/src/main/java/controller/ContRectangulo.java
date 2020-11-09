@@ -1,20 +1,20 @@
 package controller;
 
 import logic.LogSuperficies;
-import view.Rectangulo;
+import view.SupRectangulo;
 
 public class ContRectangulo {
     public static void areaRectangulo() {
-        String base = Rectangulo.etxtBaseRectangulo.getText().toString();
-        String altura = Rectangulo.etxtAlturaRectangulo.getText().toString();
+        String base = SupRectangulo.etxtBaseRectangulo.getText().toString();
+        String altura = SupRectangulo.etxtAlturaRectangulo.getText().toString();
 
         if (base.equals("") || altura.equals("")) {
 
-            LogSuperficies.mostrarMensaje(Rectangulo.context);
+            LogSuperficies.mostrarMensaje(SupRectangulo.context);
         }
         else{
 
-            Rectangulo.txtAreaRectangulo.setText(""+ LogSuperficies.areaRectangulo());
+            SupRectangulo.txtAreaRectangulo.setText(""+ LogSuperficies.areaRectangulo());
         }
     }
 }

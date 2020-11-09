@@ -1,17 +1,17 @@
 package controller;
 
 import logic.LogSuperficies;
-import view.Pentagono;
+import view.SupPentagono;
 
 public class ContPentagono {
     public static void areaPentagono() {
-        String lado = Pentagono.etxtLadoPentagono.getText().toString();
-        String apotema = Pentagono.etxtApotemaPentagono.getText().toString();
+        String lado = SupPentagono.etxtLadoPentagono.getText().toString();
+        String apotema = SupPentagono.etxtApotemaPentagono.getText().toString();
         if(lado.equals("") || apotema.equals("")){
-            LogSuperficies.mostrarMensaje(Pentagono.context);
+            LogSuperficies.mostrarMensaje(SupPentagono.context);
         }
         else{
-            Pentagono.txtAreaPentagono.setText(""+ LogSuperficies.areaPentagono());
+            SupPentagono.txtAreaPentagono.setText(""+ LogSuperficies.areaPentagono());
         }
 
     }

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginLayout">15dp</dimen>
+    <dimen name="marginCard">12dp</dimen>
+    <dimen name="marginContenido">10dp</dimen>
+
+</resources>

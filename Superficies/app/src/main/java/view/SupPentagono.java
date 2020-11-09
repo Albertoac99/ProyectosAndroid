@@ -13,7 +13,7 @@ import com.aranda.superficies.R;
 
 import controller.ContPentagono;
 
-public class Pentagono extends AppCompatActivity {
+public class SupPentagono extends AppCompatActivity {
 
     public static EditText etxtLadoPentagono;
     public static EditText etxtApotemaPentagono;

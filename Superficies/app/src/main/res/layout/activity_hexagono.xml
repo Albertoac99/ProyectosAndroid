@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="#FFFFFF"
-    tools:context="view.Hexagono">
+    tools:context="view.SupHexagono">
 
     <ImageButton
         android:id="@+id/btnHexagono2"

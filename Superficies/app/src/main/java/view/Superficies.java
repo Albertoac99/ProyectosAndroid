@@ -29,7 +29,7 @@ public class Superficies extends AppCompatActivity {
         rectangulo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Rectangulo.class);
+                Intent intent = new Intent(getApplicationContext(), SupRectangulo.class);
 
                 startActivity(intent);
             }
@@ -38,7 +38,7 @@ public class Superficies extends AppCompatActivity {
         triangulo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Triangulo.class);
+                Intent intent = new Intent(getApplicationContext(), SupTriangulo.class);
 
                 startActivity(intent);
             }
@@ -47,7 +47,7 @@ public class Superficies extends AppCompatActivity {
         circulo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Circulo.class);
+                Intent intent = new Intent(getApplicationContext(), SupCirculo.class);
 
                 startActivity(intent);
             }
@@ -56,7 +56,7 @@ public class Superficies extends AppCompatActivity {
         hexagono.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Hexagono.class);
+                Intent intent = new Intent(getApplicationContext(), SupHexagono.class);
 
                 startActivity(intent);
             }
@@ -65,7 +65,7 @@ public class Superficies extends AppCompatActivity {
         pentagono.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Pentagono.class);
+                Intent intent = new Intent(getApplicationContext(), SupPentagono.class);
 
                 startActivity(intent);
             }
@@ -74,7 +74,7 @@ public class Superficies extends AppCompatActivity {
         trapecio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Trapecio.class);
+                Intent intent = new Intent(getApplicationContext(), SupTrapecio.class);
 
                 startActivity(intent);
             }
