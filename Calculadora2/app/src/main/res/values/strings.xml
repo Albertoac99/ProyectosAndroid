@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Calculadora2</string>
+    <string name="Numero1">Numero1</string>
+    <string name="Numero2">Numero2</string>
+    <string name="Operacion">Operacion</string>
+    <string name="Resultado">Resultado</string>
+    <string name="Resultado2"></string>
+    <string name="Reset">Reset</string>
+    <string name="Sumar">Sumar</string>
+    <string name="Restar">Restar</string>
+    <string name="Multiplicar">Multiplicar</string>
+    <string name="Dividir">Dividir</string>
+    <array name="colores">
+        <item>@string/Reset</item>
+        <item>@string/Sumar</item>
+        <item>@string/Restar</item>
+        <item>@string/Multiplicar</item>
+        <item>@string/Dividir</item>
+    </array>
+</resources>

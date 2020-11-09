@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aranda.superficies">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Superficies">
+        <activity android:name="view.Triangulo"></activity>
+        <activity android:name="view.Trapecio" />
+        <activity android:name="view.Pentagono" />
+        <activity android:name="view.Hexagono" />
+        <activity android:name="view.Circulo" />
+        <activity android:name="view.Rectangulo" />
+        <activity android:name="view.Superficies">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

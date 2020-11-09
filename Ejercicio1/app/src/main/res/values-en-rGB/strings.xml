@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Volume</string>
+    <string name="Alto">High:</string>
+    <string name="Ancho">Width:</string>
+    <string name="Profundidad">Depth:</string>
+    <string name="Boton">Calculate Volume</string>
+</resources>

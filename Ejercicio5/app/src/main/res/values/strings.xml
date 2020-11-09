@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Datos Personales</string>
+    <string name="BotonCancelar">Cancelar</string>
+    <string name="BotonGuardar">Guardar</string>
+    <string name="NombreT">Nombre:</string>
+    <string name="NombreR"></string>
+    <string name="ApellidosT">Apellidos:</string>
+    <string name="ApellidosR"></string>
+    <string name="EdadT">Edad:</string>
+    <string name="EdadR"></string>
+</resources>

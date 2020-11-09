@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alturaInstruccion"
+        android:text="@string/Instruccion" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alturaNombre"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Nombre" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alturaetiqueta"
+        android:background="@color/colorBoton"
+        android:text="@string/Boton"
+        android:textColorHint="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alturaInstruccion"
+        android:text="@string/Instruccion2" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alturaNombre"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Edad" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:background="@color/colorBoton"
+        android:text="@string/Boton2" />
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    tools:context="view.Hexagono">
+
+    <ImageButton
+        android:id="@+id/btnHexagono2"
+        android:layout_width="92dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="@dimen/FiguraSuperior"
+        android:padding="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hexagono" />
+
+    <EditText
+        android:id="@+id/etxtLadoHexagono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Distancia2Pantalla"
+        android:ems="10"
+        android:hint="@string/lado"
+        android:inputType="number"
+        android:textColorHint="@color/hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHexagono2" />
+
+    <requestFocus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etxtApotemaHexagono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Distancia2Pantalla"
+        android:ems="10"
+        android:hint="@string/apotema"
+        android:inputType="number"
+        android:textColorHint="@color/hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtLadoHexagono" />
+
+    <TextView
+        android:id="@+id/txtAreaHexagono"
+        android:layout_width="@dimen/anchoResultado"
+        android:layout_height="@dimen/altoResultado"
+        android:layout_marginTop="@dimen/Distancia2Pantalla"
+        android:text="@string/resultado"
+        android:textSize="@dimen/TamañoLetra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtApotemaHexagono" />
+
+    <Button
+        android:id="@+id/btnCalcularHexagono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Distancia2Pantalla"
+        android:backgroundTint="@color/boton"
+        android:text="@string/boton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAreaHexagono" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

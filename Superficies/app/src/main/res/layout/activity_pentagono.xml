@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="view.Pentagono">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="141dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="@dimen/FiguraSuperior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pentagono" />
+
+    <EditText
+        android:id="@+id/etxtLadoPentagono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Distancia2Pantalla"
+        android:ems="10"
+        android:hint="@string/lado"
+        android:inputType="number"
+        android:textColorHint="@color/hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/etxtApotemaPentagono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Distancia2Pantalla"
+        android:ems="10"
+        android:hint="@string/apotema"
+        android:inputType="number"
+        android:textColorHint="@color/hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtLadoPentagono" />
+
+    <TextView
+        android:id="@+id/txtAreaPentagono"
+        android:layout_width="@dimen/anchoResultado"
+        android:layout_height="@dimen/altoResultado"
+        android:layout_marginTop="@dimen/Distancia2Pantalla"
+        android:text="@string/resultado"
+        android:textSize="@dimen/TamañoLetra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtApotemaPentagono" />
+
+    <Button
+        android:id="@+id/btnCalcularPentagono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Distancia2Pantalla"
+        android:backgroundTint="@color/boton"
+        android:text="@string/boton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAreaPentagono" />
+</androidx.constraintlayout.widget.ConstraintLayout>

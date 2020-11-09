@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtEuros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="Euros"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dolares"
+        android:layout_width="192dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="276dp"
+        android:text="Resultado: "
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEuros" />
+
+    <ImageButton
+        android:id="@+id/btnDolares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="56dp"
+        android:onClick="ConversionDolares"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEuros"
+        app:srcCompat="@drawable/eeuu" />
+
+    <ImageButton
+        android:id="@+id/btnYuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:onClick="ConversionYuan"
+        app:layout_constraintStart_toEndOf="@+id/btnDolares"
+        app:layout_constraintTop_toTopOf="@+id/btnDolares"
+        app:srcCompat="@drawable/china" />
+
+    <ImageButton
+        android:id="@+id/btnRupia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:onClick="ConversionRupia"
+        app:layout_constraintStart_toEndOf="@+id/btnYuan"
+        app:layout_constraintTop_toTopOf="@+id/btnYuan"
+        app:srcCompat="@drawable/india" />
+
+    <ImageButton
+        android:id="@+id/btnLibra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="30dp"
+        android:onClick="ConversionLibra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDolares"
+        app:srcCompat="@drawable/ing" />
+
+    <ImageButton
+        android:id="@+id/btnYen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:onClick="ConversionYen"
+        app:layout_constraintStart_toEndOf="@+id/btnLibra"
+        app:layout_constraintTop_toTopOf="@+id/btnLibra"
+        app:srcCompat="@drawable/japon" />
+
+    <ImageButton
+        android:id="@+id/btnPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:onClick="ConversionPeso"
+        app:layout_constraintStart_toEndOf="@+id/btnYen"
+        app:layout_constraintTop_toTopOf="@+id/btnYen"
+        app:srcCompat="@drawable/mexico" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

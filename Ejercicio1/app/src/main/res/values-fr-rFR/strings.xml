@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Volume</string>
+    <string name="Alto">Haute:</string>
+    <string name="Ancho">Largeur:</string>
+    <string name="Profundidad">" Profondeur:"</string>
+    <string name="Boton">" calculer le volume"</string>
+</resources>

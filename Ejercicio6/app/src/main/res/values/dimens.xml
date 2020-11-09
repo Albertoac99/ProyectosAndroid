@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="SeparacionV1">0dp</dimen>
+    <dimen name="SeparacionV2">0dp</dimen>
+    <dimen name="SeparacionV3">0dp</dimen>
+    <dimen name="SeparacionV1P">34dp</dimen>
+    <dimen name="SeparacionV2P">137dp</dimen>
+    <dimen name="SeparacionV3P">185dp</dimen>
+    <dimen name="Horizontal1">101dp</dimen>
+    <dimen name="EntreH">20dp</dimen>
+    <dimen name="EntreI">48dp</dimen>
+    <dimen name="Bo">120dp</dimen>
+    <dimen name="Bo2">148dp</dimen>
+    <dimen name="V1">80dp</dimen>
+    <dimen name="V2">70dp</dimen>
+    <dimen name="HorizontalV1">40dp</dimen>
+    <dimen name="HorizontalV2">30dp</dimen>
+    <dimen name="HBo">50dp</dimen>
+    <dimen name="HBo2">256dp</dimen>
+    <dimen name="c">458dp</dimen>
+    <dimen name="a">365dp</dimen>
+    <dimen name="b">441dp</dimen>
+    <dimen name="Sep">52dp</dimen>
+</resources>

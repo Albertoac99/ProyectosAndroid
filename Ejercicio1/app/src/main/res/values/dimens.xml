@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Texto">30dp</dimen>
+    <dimen name="Boton">20dp</dimen>
+    <dimen name="BotonH">300dp</dimen>
+    <dimen name="BotonW">400dp</dimen>
+
+</resources>

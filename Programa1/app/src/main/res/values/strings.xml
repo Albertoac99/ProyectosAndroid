@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Programa1</string>
+    <string name="saludar">Hola Mundo!</string>
+    <string name="Boton">Calcular Volumen</string>
+    <string name="Instruccion">Alto:</string>
+    <string name="Nombre">Ancho:</string>
+    <string name="Boton2">Cancelar</string>
+    <string name="Instruccion2">Introduzca su edad</string>
+    <string name="Edad">Edad</string>
+</resources>

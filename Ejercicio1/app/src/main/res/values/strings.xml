@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Volumen</string>
+    <string name="Alto">Alto:</string>
+    <string name="Ancho">Ancho:</string>
+    <string name="Profundidad">Profundidad:</string>
+    <string name="Boton">Calcular Volumen</string>
+</resources>

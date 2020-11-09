@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Alto"
+        android:textSize="@dimen/Texto"
+        android:textColor="@color/Texto"
+        android:fontFamily="cursive"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Ancho"
+        android:textSize="@dimen/Texto"
+        android:textColor="@color/Texto"
+        android:fontFamily="cursive"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Profundidad"
+        android:textSize="@dimen/Texto"
+        android:textColor="@color/Texto"
+        android:fontFamily="cursive"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/BotonW"
+        android:layout_height="@dimen/BotonH"
+        android:text="@string/Boton"
+        android:textSize="@dimen/Boton"
+        android:background="@color/Boton"
+        />
+</LinearLayout>

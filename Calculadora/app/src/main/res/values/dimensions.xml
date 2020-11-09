@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="entrebotones">36dp</dimen>
+    <dimen name="entretexto">36dp</dimen>
+    <dimen name="resultado">56dp</dimen>
+    <dimen name="margen">44dp</dimen>
+    <dimen name="botonestexto">52dp</dimen>
+    <dimen name="margensuperior2">28dp</dimen>
+    <dimen name="distentreplain">16dp</dimen>
+    <dimen name="entrelabelyplain">32dp</dimen>
+
+
+</resources>

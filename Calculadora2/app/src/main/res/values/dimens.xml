@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margen">44dp</dimen>
+    <dimen name="margensup">28dp</dimen>
+    <dimen name="distlbl">56dp</dimen>
+    <dimen name="distplain">28dp</dimen>
+    <dimen name="distlblplain">36dp</dimen>
+    <dimen name="distplainlist">40dp</dimen>
+    <dimen name="distlistresult">46dp</dimen>
+    <dimen name="disthoriz">48dp</dimen>
+
+
+</resources>

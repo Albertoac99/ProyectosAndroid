@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="DistanciaSuperior">160dp</dimen>
+    <dimen name="DistanciaSuperior2">172dp</dimen>
+    <dimen name="DistanciaFigurasX">24dp</dimen>
+    <dimen name="DistanciaFigurasY">108dp</dimen>
+    <dimen name="DistanciaFigurasY2">124dp</dimen>
+    <dimen name="FiguraSuperior">68dp</dimen>
+    <dimen name="Distancia2Pantalla">44dp</dimen>
+    <dimen name="anchoResultado">143dp</dimen>
+    <dimen name="altoResultado">32dp</dimen>
+    <dimen name="TamañoLetra">26dp</dimen>
+
+
+
+
+
+
+</resources>

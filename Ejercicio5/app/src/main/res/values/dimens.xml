@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="LineaVertical1">40dp</dimen>
+    <dimen name="LineaHorizontal1">80dp</dimen>
+    <dimen name="SeparacionH">28dp</dimen>
+    <dimen name="SeparaconT">44dp</dimen>
+    <dimen name="SeparacoinR">20dp</dimen>
+    <dimen name="SeparacionB">52dp</dimen>
+    <dimen name="SeparacionD">60dp</dimen>
+    <dimen name="SeparacionEB">44dp</dimen>
+</resources>

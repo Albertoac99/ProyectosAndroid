@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="view.Trapecio">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="142dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="@dimen/FiguraSuperior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/trapecio" />
+
+    <EditText
+        android:id="@+id/etxtAlturaTrapecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Distancia2Pantalla"
+        android:ems="10"
+        android:hint="@string/altura"
+        android:inputType="number"
+        android:textColorHint="@color/hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/etxtBaseTrapecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Distancia2Pantalla"
+        android:ems="10"
+        android:hint="@string/base"
+        android:inputType="number"
+        android:textColorHint="@color/hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtAlturaTrapecio" />
+
+    <EditText
+        android:id="@+id/etxtBaseSuperiorTrapecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Distancia2Pantalla"
+        android:ems="10"
+        android:hint="@string/basesuperior"
+        android:inputType="number"
+        android:textColorHint="@color/hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtBaseTrapecio" />
+
+    <TextView
+        android:id="@+id/txtAreaTrapecio"
+        android:layout_width="@dimen/anchoResultado"
+        android:layout_height="@dimen/altoResultado"
+        android:layout_marginTop="@dimen/Distancia2Pantalla"
+        android:text="@string/resultado"
+        android:textSize="@dimen/TamañoLetra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtBaseSuperiorTrapecio" />
+
+    <Button
+        android:id="@+id/btnCalcularTrapecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Distancia2Pantalla"
+        android:backgroundTint="@color/boton"
+        android:text="@string/boton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAreaTrapecio" />
+</androidx.constraintlayout.widget.ConstraintLayout>

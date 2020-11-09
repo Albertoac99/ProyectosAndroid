@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="alturaetiqueta">30dp</dimen>
+    <dimen name="alturaboton">20dp</dimen>
+    <dimen name="alturaInstruccion">20dp</dimen>
+    <dimen name="alturaNombre">40dp</dimen>
+
+
+</resources>
+

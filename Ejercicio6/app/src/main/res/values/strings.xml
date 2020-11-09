@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Conexión a BD</string>
+    <string name="IP">IP</string>
+    <string name="BaseDatos">BaseDatos</string>
+    <string name="Usuario">Usuario</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="Puntos">:</string>
+    <string name="Boton">Conectar</string>
+    <string name="Rellenar"></string>
+
+
+</resources>

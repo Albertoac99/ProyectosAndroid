@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="view.Superficies">
+
+    <ImageButton
+        android:id="@+id/btnRectangulo"
+        android:layout_width="101dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="24dp"
+        android:padding="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnCirculo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangulo" />
+
+    <ImageButton
+        android:id="@+id/btnCirculo"
+        android:layout_width="87dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="160dp"
+        android:padding="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circulo" />
+
+    <ImageButton
+        android:id="@+id/btnTriangulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="172dp"
+        android:padding="0dp"
+        app:layout_constraintStart_toEndOf="@+id/btnCirculo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/triangulo" />
+
+    <ImageButton
+        android:id="@+id/btnTrapecio"
+        android:layout_width="107dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="24dp"
+        android:padding="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnPentagono"
+        app:layout_constraintTop_toBottomOf="@+id/btnCirculo"
+        app:srcCompat="@drawable/trapecio" />
+
+    <ImageButton
+        android:id="@+id/btnPentagono"
+        android:layout_width="89dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="108dp"
+        android:padding="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCirculo"
+        app:srcCompat="@drawable/pentagono" />
+
+    <ImageButton
+        android:id="@+id/btnHexagono"
+        android:layout_width="92dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="108dp"
+        android:padding="0dp"
+        app:layout_constraintStart_toEndOf="@+id/btnPentagono"
+        app:layout_constraintTop_toBottomOf="@+id/btnCirculo"
+        app:srcCompat="@drawable/hexagono" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

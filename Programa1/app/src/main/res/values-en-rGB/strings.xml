@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Program1</string>
+    <string name="saludar">Hello World!</string>
+    <string name="Boton">Acept</string>
+    <string name="Instruccion">Enter your name</string>
+    <string name="Nombre">Name</string>
+    <string name="Boton2">Cancel</string>
+    <string name="Instruccion2">Enter your age</string>
+    <string name="Edad">Age</string>
+</resources>

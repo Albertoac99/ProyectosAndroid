@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PracticaEvents</string>
+
+    <string name="c1">Rojo</string>
+    <string name="c2">Verde</string>
+    <string name="c3">Azul</string>
+    <array name="colores">
+        <item>@string/c1</item>
+        <item>@string/c2</item>
+        <item>@string/c3</item>
+    </array>
+</resources>
