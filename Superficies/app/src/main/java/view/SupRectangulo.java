@@ -3,6 +3,7 @@ package view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,7 +28,7 @@ public class SupRectangulo extends AppCompatActivity {
         setContentView(R.layout.activity_rectangulo);
 
         context = getApplicationContext();
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         etxtBaseRectangulo = findViewById(R.id.etxtBaseRectangulo);
         etxtAlturaRectangulo = findViewById(R.id.etxtAlturaRectangulo);
         txtAreaRectangulo = findViewById(R.id.txtAreaRectangulo);

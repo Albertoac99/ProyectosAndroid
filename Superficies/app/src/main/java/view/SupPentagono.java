@@ -3,6 +3,7 @@ package view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,7 +29,7 @@ public class SupPentagono extends AppCompatActivity {
 
         context = getApplicationContext();
 
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         etxtApotemaPentagono = findViewById(R.id.etxtApotemaPentagono);
         etxtLadoPentagono = findViewById(R.id.etxtLadoPentagono);
         txtAreaPentagono = findViewById(R.id.txtAreaPentagono);

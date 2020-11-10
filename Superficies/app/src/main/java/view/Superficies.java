@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -25,6 +26,8 @@ public class Superficies extends AppCompatActivity {
         ImageButton hexagono = findViewById(R.id.btnHexagono);
         ImageButton pentagono = findViewById(R.id.btnPentagono);
         ImageButton trapecio = findViewById(R.id.btnTrapecio);
+
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         rectangulo.setOnClickListener(new View.OnClickListener() {
             @Override

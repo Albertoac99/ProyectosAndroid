@@ -3,6 +3,7 @@ package view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,7 +29,7 @@ public class SupTriangulo extends AppCompatActivity {
         setContentView(R.layout.activity_triangulo);
 
         context = getApplicationContext();
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         etxtBaseTriangulo = findViewById(R.id.etxtBaseTriangulo);
         etxtAlturaTriangulo = findViewById(R.id.etxtAlturaTriangulo);
         txtAreaTriangulo = findViewById(R.id.txtAreaTriangulo);
