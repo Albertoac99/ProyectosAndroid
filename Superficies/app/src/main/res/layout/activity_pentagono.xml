@@ -45,11 +45,8 @@
 
     <TextView
         android:id="@+id/txtAreaPentagono"
-        android:layout_width="@dimen/anchoResultado"
-        android:layout_height="@dimen/altoResultado"
+        style="@style/resultado"
         android:layout_marginTop="@dimen/Distancia2Pantalla"
-        android:text="@string/resultado"
-        android:textSize="@dimen/TamañoLetra"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,12 +54,8 @@
 
     <Button
         android:id="@+id/btnCalcularPentagono"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/Distancia2Pantalla"
-        android:backgroundTint="@color/boton"
-        android:text="@string/boton"
+        style="@style/boton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAreaPentagono" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

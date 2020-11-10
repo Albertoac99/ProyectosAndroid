@@ -36,22 +36,15 @@
 
     <Button
         android:id="@+id/btnCalcularCirculo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/Distancia2Pantalla"
-        android:backgroundTint="@color/boton"
-        android:text="@string/boton"
+        style="@style/boton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAreaCirculo" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txtAreaCirculo"
-        android:layout_width="@dimen/anchoResultado"
-        android:layout_height="@dimen/altoResultado"
+        style="@style/resultado"
         android:layout_marginTop="@dimen/Distancia2Pantalla"
-        android:text="@string/resultado"
-        android:textSize="@dimen/TamañoLetra"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etxtRadioCirculo" />

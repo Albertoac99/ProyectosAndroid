@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="boton">
+        <item name="backgroundTint">@color/boton</item>
+        <item name="android:text">@string/boton</item>
+        <item name="android:layout_marginBottom">@dimen/Distancia2Pantalla</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="resultado">
+        <item name="android:text">@string/resultado</item>
+        <item name="android:textSize">@dimen/TamañoLetra</item>
+        <item name="android:layout_width">@dimen/anchoResultado</item>
+        <item name="android:layout_height">@dimen/altoResultado</item>
+
+    </style>
+</resources>

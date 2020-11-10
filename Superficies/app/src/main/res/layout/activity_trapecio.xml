@@ -58,23 +58,16 @@
 
     <TextView
         android:id="@+id/txtAreaTrapecio"
-        android:layout_width="@dimen/anchoResultado"
-        android:layout_height="@dimen/altoResultado"
+        style="@style/resultado"
         android:layout_marginTop="@dimen/Distancia2Pantalla"
-        android:text="@string/resultado"
-        android:textSize="@dimen/TamañoLetra"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etxtBaseSuperiorTrapecio" />
 
     <Button
         android:id="@+id/btnCalcularTrapecio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/Distancia2Pantalla"
-        android:backgroundTint="@color/boton"
-        android:text="@string/boton"
+        style="@style/boton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAreaTrapecio" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
