@@ -8,10 +8,10 @@
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardProducto"
+        style="@style/card"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="@dimen/marginCard"
-        android:backgroundTint="@color/FondoCard">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,18 +19,16 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/txtNombre"
+                style="@style/nombre"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/marginContenido"
-                android:text="@string/nombre" />
+                android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/txtPrecio"
+                style="@style/precio"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/marginContenido"
-                android:text="@string/precio" />
+                android:layout_height="wrap_content" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -41,12 +39,18 @@
                     android:id="@+id/ratingBar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/marginContenido" />
+                    android:layout_margin="@dimen/marginContenido"
+                    android:numStars="5"
+                    android:clickable="false"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:isIndicator="true"/>
+
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/imgView"
                     android:layout_width="wrap_content"
-                    android:layout_height="53dp"
+                    android:layout_height="54dp"
                     android:layout_margin="@dimen/marginContenido"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/azul" />

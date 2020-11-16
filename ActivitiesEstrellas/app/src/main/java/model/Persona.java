@@ -7,6 +7,7 @@ public class Persona {
     private float Estrellas;
 
     public Persona(String nombre, String apellidos, float estrellas) {
+
         Nombre = nombre;
         Apellidos = apellidos;
         Estrellas = estrellas;
@@ -39,7 +40,7 @@ public class Persona {
     @Override
     public String toString() {
         return "Persona{" +
-                "Nombre='" + Nombre + '\'' +
+                ", Nombre='" + Nombre + '\'' +
                 ", Apellidos='" + Apellidos + '\'' +
                 ", Estrellas=" + Estrellas +
                 '}';

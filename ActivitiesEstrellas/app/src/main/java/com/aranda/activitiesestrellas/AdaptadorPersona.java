@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import model.Persona;
 
 public class AdaptadorPersona extends RecyclerView.Adapter<AdaptadorPersona.HolderPersona>{
-
+    public static int posicion;
     Context c;
 
     public AdaptadorPersona(Context c){
@@ -36,6 +36,7 @@ public class AdaptadorPersona extends RecyclerView.Adapter<AdaptadorPersona.Hold
         return new HolderPersona(v);
     }
 
+
     @Override
     public void onBindViewHolder(@NonNull AdaptadorPersona.HolderPersona holder, int position) {
         holder.txtNombre.setText(Datos.gente.get(position).getNombre());
@@ -44,7 +45,7 @@ public class AdaptadorPersona extends RecyclerView.Adapter<AdaptadorPersona.Hold
         holder.cardPersona.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("Informacion pulsada" +position);
+                posicion = position;
                 Intent intent = new Intent(c, SegundaPantalla.class);
 
                 c.startActivity(intent);
