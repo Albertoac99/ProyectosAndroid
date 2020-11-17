@@ -9,4 +9,7 @@
     <dimen name="estrellasY">20dp</dimen>
     <dimen name="estrellasX">90dp</dimen>
     <dimen name="marginContenido2">30dp</dimen>
+    <dimen name="tamañoLetraNombre">21dp</dimen>
+    <dimen name="tamañoLetraPrecio">22dp</dimen>
+    <dimen name="tamañoDoblado">230dp</dimen>
 </resources>

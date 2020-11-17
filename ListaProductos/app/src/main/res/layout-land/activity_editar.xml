@@ -19,17 +19,14 @@
 
             <EditText
                 android:id="@+id/etxtNombre"
-                android:layout_width="132dp"
+                style="@style/nombreLand"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/marginContenido"
-                android:layout_marginTop="@dimen/marginContenido"
-                android:layout_marginBottom="@dimen/marginContenido2"
+                android:hint="@string/nombreEditar"
                 android:inputType="textPersonName" />
 
             <EditText
                 android:id="@+id/etxtPrecio"
-                style="@style/IntroducePrecio"
-                android:layout_width="128dp"
+                style="@style/precioLand"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="number" />
@@ -74,37 +71,37 @@
                     <RadioGroup
                         android:id="@+id/radBoton"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_margin="10dp">
 
                         <RadioButton
                             android:id="@+id/radioButton"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/marginContenido2"
                             android:text="@string/pack" />
 
                         <RadioButton
                             android:id="@+id/radioButton2"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/marginContenido2"
                             android:text="@string/caja" />
 
                         <RadioButton
                             android:id="@+id/radioButton3"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/marginContenido2"
                             android:text="@string/bolsa" />
 
                         <RadioButton
                             android:id="@+id/radioButton4"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/marginContenido2"
                             android:text="@string/brick" />
 
                         <RadioButton
                             android:id="@+id/radioButton5"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/marginContenido2"
                             android:text="@string/otro" />
 
                     </RadioGroup>
@@ -113,7 +110,7 @@
                 <ListView
                     android:id="@+id/lista2"
                     android:layout_width="match_parent"
-                    android:layout_height="240dp"
+                    android:layout_height="151dp"
                     android:layout_marginLeft="200dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"

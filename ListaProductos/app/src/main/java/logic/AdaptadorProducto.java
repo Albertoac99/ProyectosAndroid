@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
@@ -15,6 +16,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.aranda.listaproductos.R;
 
 import view.Editar;
+
+import static logic.Datos.elementos;
 
 public class AdaptadorProducto extends RecyclerView.Adapter<AdaptadorProducto.HolderProducto>{
 
@@ -41,9 +44,16 @@ public class AdaptadorProducto extends RecyclerView.Adapter<AdaptadorProducto.Ho
 
     @Override
     public void onBindViewHolder(@NonNull AdaptadorProducto.HolderProducto holder, int position) {
-    holder.txtNombre.setText(Datos.elementos.get(position).getNombre());
-    holder.txtPrecio.setText(Datos.elementos.get(position).getPrecio() + " €");
-    holder.ratingBar.setRating(Datos.elementos.get(position).getEstrellas());
+    holder.txtNombre.setText(elementos.get(position).getNombre());
+    holder.txtPrecio.setText(elementos.get(position).getPrecio() + " €");
+    holder.ratingBar.setRating(elementos.get(position).getEstrellas());
+
+    if(elementos.get(position).isFragil()){
+        holder.imgView.setImageResource(R.drawable.rojo);
+    }
+    else{
+        holder.imgView.setImageResource(R.drawable.azul);
+    }
         holder.cardProducto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,7 +67,7 @@ public class AdaptadorProducto extends RecyclerView.Adapter<AdaptadorProducto.Ho
 
     @Override
     public int getItemCount() {
-        return Datos.elementos.size();
+        return elementos.size();
     }
 
 
@@ -67,7 +77,7 @@ public class AdaptadorProducto extends RecyclerView.Adapter<AdaptadorProducto.Ho
         TextView txtNombre;
         TextView txtPrecio;
         RatingBar ratingBar;
-
+        ImageView imgView;
 
         public HolderProducto(@NonNull View itemView) {
             super(itemView);
@@ -76,7 +86,7 @@ public class AdaptadorProducto extends RecyclerView.Adapter<AdaptadorProducto.Ho
             txtNombre = itemView.findViewById(R.id.txtNombre);
             txtPrecio = itemView.findViewById(R.id.txtPrecio);
             ratingBar = itemView.findViewById(R.id.ratingBar);
-
+            imgView = itemView.findViewById(R.id.imgView);
         }
 
 

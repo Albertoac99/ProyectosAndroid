@@ -35,17 +35,25 @@
         <item name="android:layout_marginTop">@dimen/estrellasY</item>
     </style>
     <style name="nombreLand">
-
+        <item name="android:layout_marginLeft">@dimen/marginContenido</item>
+        <item name="android:layout_marginTop">@dimen/marginContenido</item>
+        <item name="android:layout_marginBottom">@dimen/marginContenido2</item>
+        <item name="android:hint">@string/nombreEditar</item>
+        <item name="android:textSize">@dimen/tamañoLetraNombre</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_width">@dimen/tamañoDoblado</item>
 
     </style>
     <style name="precioLand">
 
+        <item name="android:layout_marginLeft">@dimen/marginContenido</item>
+        <item name="android:layout_marginTop">@dimen/marginContenido</item>
+        <item name="android:layout_marginBottom">@dimen/marginContenido2</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:hint">@string/Precio</item>
+        <item name="android:textSize">@dimen/tamañoLetraPrecio</item>
+        <item name="android:layout_width">@dimen/tamañoDoblado</item>
 
     </style>
-    <style name="estrellasLand">
-
-
-    </style>
-
 
 </resources>

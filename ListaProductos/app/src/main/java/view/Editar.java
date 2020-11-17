@@ -1,19 +1,18 @@
 package view;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.RadioGroup;
 import android.widget.RatingBar;
 import android.widget.Spinner;
 import android.widget.Switch;
+
 
 import com.aranda.listaproductos.R;
 
@@ -49,6 +48,25 @@ public class Editar extends AppCompatActivity {
         radBoton = findViewById(R.id.radBoton);
         swtFragil = findViewById(R.id.swtFragil);
 
+        etxtNombre.setText(Datos.elementos.get(posicion).getNombre());
+        etxtPrecio.setText(Datos.elementos.get(posicion).getPrecio());
+        edtStars.setRating(Datos.elementos.get(posicion).getEstrellas());
+        lista1.setSelection(Datos.elementos.get(posicion).getProveedor());
+        radBoton.check(Datos.elementos.get(posicion).getEnvoltorio());
+        swtFragil.setChecked(Datos.elementos.get(posicion).isFragil());
+
+        swtFragil.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(swtFragil.isChecked()){
+                    swtFragil.setChecked(true);
+                }
+                else{
+                    swtFragil.setChecked(false);
+                }
+
+            }
+        });
 
         btnGuardar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,7 +77,7 @@ public class Editar extends AppCompatActivity {
                 String sNombre = etxtNombre.getText().toString();
                 String sPrecio = etxtPrecio.getText().toString();
                 float fEstrellas = edtStars.getRating();
-                boolean bFragil = swtFragil.isActivated();
+                boolean bFragil = swtFragil.isChecked();
                 int ID = radBoton.getCheckedRadioButtonId();
                 int ciudad = lista2.getSelectedItemPosition();
                 int proveedor = (int)lista1.getSelectedItemId();
@@ -71,18 +89,4 @@ public class Editar extends AppCompatActivity {
 
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        etxtNombre.setText(Datos.elementos.get(posicion).getNombre());
-        etxtPrecio.setText(Datos.elementos.get(posicion).getPrecio());
-        edtStars.setRating(Datos.elementos.get(posicion).getEstrellas());
-        lista1.setSelection(Datos.elementos.get(posicion).getProveedor());
-        radBoton.check(Datos.elementos.get(posicion).getEnvoltorio());
-        swtFragil.setActivated(Datos.elementos.get(posicion).isFragil());
-
-        adaptador.refrescar();
-
-    }
 }
