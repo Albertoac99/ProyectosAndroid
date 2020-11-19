@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">ListaProductosSQL</string>
+    <string name="nombre">NOMBRE_PRODUCTO</string>
+    <string name="precio">PRECIO €</string>
+    <string name="Huelva">Huelva</string>
+    <string name="Sevilla">Sevilla</string>
+    <string name="Jaen">Jaen</string>
+    <string name="Cordoba">Cordoba</string>
+    <string name="Granada">Granada</string>
+    <string name="Malaga">Malaga</string>
+    <string name="Almeria">Almeria</string>
+    <string name="Cadiz">Cadiz</string>
+    <array name="lista2">
+        <item>@string/Huelva</item>
+        <item>@string/Sevilla</item>
+        <item>@string/Jaen</item>
+        <item>@string/Cordoba</item>
+        <item>@string/Granada</item>
+        <item>@string/Malaga</item>
+        <item>@string/Almeria</item>
+        <item>@string/Cadiz</item>
+    </array>
+    <string name="Amazon">Amazon</string>
+    <string name="Aliexpress">Aliexpress</string>
+    <string name="PCComponentes">PCComponentes</string>
+    <array name="lista1">
+        <item>@string/Amazon</item>
+        <item>@string/Aliexpress</item>
+        <item>@string/PCComponentes</item>
+    </array>
+    <string name="Boton">Guardar</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Precio">Precio</string>
+    <string name="fragil">Es un producto frágil</string>
+    <string name="pack">Pack</string>
+    <string name="caja">Caja</string>
+    <string name="bolsa">Bolsa</string>
+    <string name="brick">Brick</string>
+    <string name="otro">Otro</string>
+    <string name="nombreEditar">Nombre</string>
+    <string name="precioEditar">Precio</string>
+    <string name="botonBorrar">Borrar</string>
+
+
+</resources>
