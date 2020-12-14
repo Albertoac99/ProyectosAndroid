@@ -99,31 +99,31 @@ public class Superficies extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
+        Intent intent;
         switch (item.getItemId()) {
             case R.id.menuCirculo:
-                Intent intentc = new Intent(this, SupCirculo.class);
-                startActivity(intentc);
+                intent = new Intent(this, SupCirculo.class);
+                startActivity(intent);
                 break;
             case R.id.menuHexagono:
-                Intent intenth = new Intent(this, SupHexagono.class);
-                startActivity(intenth);
+                intent = new Intent(this, SupHexagono.class);
+                startActivity(intent);
                 break;
             case R.id.menuPentagono:
-                Intent intentp = new Intent(this, SupPentagono.class);
-                startActivity(intentp);
+                intent = new Intent(this, SupPentagono.class);
+                startActivity(intent);
                 break;
             case R.id.menuTrapecio:
-                Intent intentt = new Intent(this, SupTrapecio.class);
-                startActivity(intentt);
+                intent = new Intent(this, SupTrapecio.class);
+                startActivity(intent);
                 break;
             case R.id.menuTriangulo:
-                Intent intenttr = new Intent(this, SupTriangulo.class);
-                startActivity(intenttr);
+                intent = new Intent(this, SupTriangulo.class);
+                startActivity(intent);
                 break;
             case R.id.menuRectangulo:
-                Intent intentr = new Intent(this, SupRectangulo.class);
-                startActivity(intentr);
+                intent = new Intent(this, SupRectangulo.class);
+                startActivity(intent);
                 break;
         }
         return true;

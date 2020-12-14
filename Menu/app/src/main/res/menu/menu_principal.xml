@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/menu1"
-        android:title="@string/opc1"
-        />
-    <item
-        android:id="@+id/menu2"
-        android:title="@string/opc2"
-        />
-    <item
-        android:id="@+id/menu3"
-        android:title="@string/opc3"
-        />
-    <item
-        android:id="@+id/menu4"
-        android:title="@string/opc4"
-        />
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/Grupo1">
+        <item
+            android:id="@+id/menu1"
+            android:title="@string/opc1"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_cast"
+            />
+        <item
+            android:id="@+id/menu2"
+            android:title="@string/opc2"
+            />
+    </group>
+    <group android:id="@+id/Grupo2">
+        <item
+            android:id="@+id/menu3"
+            android:title="@string/opc3"
+            />
+        <item
+            android:id="@+id/menu4"
+            android:title="@string/opc4"
+            />
+    </group>
+
 </menu>
