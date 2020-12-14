@@ -30,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
         m.setGroupDividerEnabled(true);
         m.setOptionalIconsVisible(true);
 
+        //Que no aparezca una opcion del menu
+        //m.findItem(R.id.menu1).setVisible(false);
+
         return true;
     }
 
