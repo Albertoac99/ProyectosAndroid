@@ -8,4 +8,10 @@
     <string name="altura">Height</string>
     <string name="boton">Calculate</string>
     <string name="resultado">XXX</string>
+    <string name="rectangulo" translatable="false">rectangulo</string>
+    <string name="triangulo" translatable="false">triangulo</string>
+    <string name="pentagono" translatable="false">pentagono</string>
+    <string name="hexagono" translatable="false">hexagono</string>
+    <string name="trapecio" translatable="false">trapecio</string>
+    <string name="circulo" translatable="false">circulo</string>
 </resources>

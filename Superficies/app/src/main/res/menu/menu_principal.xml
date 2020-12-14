@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuRectangulo"
+        android:title="@string/rectangulo"
+        />
+    <item
+        android:id="@+id/menuTriangulo"
+        android:title="@string/triangulo"
+        />
+    <item
+        android:id="@+id/menuPentagono"
+        android:title="@string/pentagono"
+        />
+    <item
+        android:id="@+id/menuHexagono"
+        android:title="@string/hexagono"
+        />
+    <item
+        android:id="@+id/menuTrapecio"
+        android:title="@string/trapecio"
+        />
+    <item
+        android:id="@+id/menuCirculo"
+        android:title="@string/circulo"
+        />
+</menu>

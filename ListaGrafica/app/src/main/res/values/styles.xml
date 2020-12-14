@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="card">
+        <item name="android:layout_margin">@dimen/marginCard</item>
+        <item name="android:backgroundTint">@color/FondoCard</item>
+    </style>
+    <style name="nombre">
+        <item name="android:layout_margin">@dimen/marginContenido</item>
+        <item name="android:text">@string/nombre</item>
+    </style>
+    <style name="precio">
+        <item name="android:layout_margin">@dimen/marginContenido</item>
+        <item name="android:text">@string/precio</item>
+    </style>
+    <style name="boton">
+        <item name="android:backgroundTint">@color/boton</item>
+        <item name="android:text">@string/Boton</item>
+    </style>
+    <style name="IntroduceNombre">
+        <item name="android:hint">@string/nombreEditar</item>
+        <item name="android:layout_margin">@dimen/marginContenido</item>
+    </style>
+    <style name="IntroducePrecio">
+        <item name="android:hint">@string/precioEditar</item>
+        <item name="android:layout_margin">@dimen/marginContenido</item>
+    </style>
+    <style name="Lista2">
+        <item name="android:layout_marginLeft">@dimen/separacion</item>
+        <item name="android:layout_marginRight">@dimen/marginContenido</item>
+        <item name="android:layout_marginBottom">@dimen/marginContenido</item>
+        <item name="android:layout_marginTop">@dimen/marginContenido</item>
+    </style>
+    <style name="estrellas">
+        <item name="android:layout_marginLeft">@dimen/estrellasX</item>
+        <item name="android:layout_marginTop">@dimen/estrellasY</item>
+    </style>
+    <style name="nombreLand">
+        <item name="android:layout_marginLeft">@dimen/marginContenido</item>
+        <item name="android:layout_marginTop">@dimen/marginContenido</item>
+        <item name="android:layout_marginBottom">@dimen/marginContenido2</item>
+        <item name="android:hint">@string/nombreEditar</item>
+        <item name="android:textSize">@dimen/tamañoLetraNombre</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_width">@dimen/tamañoDoblado</item>
+
+    </style>
+    <style name="precioLand">
+
+        <item name="android:layout_marginLeft">@dimen/marginContenido</item>
+        <item name="android:layout_marginTop">@dimen/marginContenido</item>
+        <item name="android:layout_marginBottom">@dimen/marginContenido2</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:hint">@string/Precio</item>
+        <item name="android:textSize">@dimen/tamañoLetraPrecio</item>
+        <item name="android:layout_width">@dimen/tamañoDoblado</item>
+
+    </style>
+
+</resources>
