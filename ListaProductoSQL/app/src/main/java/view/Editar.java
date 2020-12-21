@@ -1,8 +1,15 @@
 package view;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.view.menu.MenuBuilder;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -12,6 +19,7 @@ import android.widget.RadioGroup;
 import android.widget.RatingBar;
 import android.widget.Spinner;
 import android.widget.Switch;
+import android.widget.Toast;
 
 import com.aranda.listaproductosql.R;
 
@@ -31,6 +39,46 @@ public class Editar extends AppCompatActivity {
     RadioGroup radBoton;
     Switch swtFragil;
     AdaptadorProducto adaptador;
+
+    @SuppressLint("RestrictedApi")
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_principal,menu);
+
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+
+            case R.id.borrar:
+                Toast.makeText(this, "borrado", Toast.LENGTH_SHORT).show();
+                onBackPressed();
+
+                break;
+            case R.id.guardar:
+                Toast.makeText(this, "Guardado", Toast.LENGTH_SHORT).show();
+                String sNombre = etxtNombre.getText().toString();
+                String sPrecio = etxtPrecio.getText().toString();
+                float fEstrellas = edtStars.getRating();
+                boolean bFragil = swtFragil.isChecked();
+                int ID = radBoton.getCheckedRadioButtonId();
+                int ciudad = lista2.getSelectedItemPosition();
+                int proveedor = (int)lista1.getSelectedItemId();
+                adaptador = new AdaptadorProducto(getApplicationContext());
+                Datos.elementos.set(AdaptadorProducto.posicion, new Producto(sNombre,sPrecio,fEstrellas,bFragil,ID,ciudad,proveedor));
+                //Para volver atrás
+                onBackPressed();
+                break;
+
+        }
+
+        return true;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,6 +131,7 @@ public class Editar extends AppCompatActivity {
                 Datos.elementos.set(AdaptadorProducto.posicion, new Producto(sNombre,sPrecio,fEstrellas,bFragil,ID,ciudad,proveedor));
             }
         });
+
 
 
     }

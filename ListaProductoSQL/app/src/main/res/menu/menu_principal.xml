@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/borrar"
+        android:title="@string/BotonBorrar"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_delete_24"
+        />
+    <item
+        android:id="@+id/guardar"
+        android:title="@string/Boton"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_save_24"
+        />
+
+</menu>
