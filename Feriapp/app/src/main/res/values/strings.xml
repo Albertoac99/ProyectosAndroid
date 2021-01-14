@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">Feriapp</string>
     <string name="loguearse">Inicia Sesión</string>
-    <string name="registrarse">Nueva cuenta</string>
+    <string name="registrarse">Registrarse</string>
     <string name="sinsesion">Continuar sin iniciar sesión</string>
     <string name="usuario">Usuario</string>
-    <string name="contrasenya">Contraseña</string>
+    <string name="contrasenia">Contraseña</string>
+    <string name="introducirDatos">Rellene los siguientes campos:</string>
+    <string name="crearUsuario">Crear usuario</string>
 </resources>

@@ -1,2 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <style name="botonIniciarSesion">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:text">@string/loguearse</item>
+        <item name="android:textColor">@color/colorBotones</item>
+        <item name="android:textSize">@dimen/LetraBotones</item>
+    </style>
+    <style name="botonRegistrar">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:text">@string/registrarse</item>
+        <item name="android:textColor">@color/colorBotones</item>
+        <item name="android:textSize">@dimen/LetraBotones</item>
+    </style>
+    <style name="botonSinLogueo">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:text">@string/sinsesion</item>
+        <item name="android:textColor">@color/colorBotones</item>
+        <item name="android:textSize">@dimen/LetraBotones</item>
+    </style>
+
+    <style name="FotoDePerfil">
+        <item name="android:layout_width">@dimen/anchoFotoPerfil</item>
+        <item name="android:layout_height">@dimen/altoFotoPerfil</item>
+    </style>
+
+    <style name="crearUsuario">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:text">@string/crearUsuario</item>
+        <item name="android:textColor">@color/colorBotones</item>
+        <item name="android:textSize">@dimen/LetraBotones</item>
+    </style>
+
+
+</resources>

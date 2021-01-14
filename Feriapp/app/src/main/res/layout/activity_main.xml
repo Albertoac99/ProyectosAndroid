@@ -4,9 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:backgroundTint="#FFFFFF"
-    tools:context=".MainActivity">
+    tools:context="view.Inicio">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="103dp"
+        android:layout_height="105dp"
+        android:rotation="-45"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/abanico" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="103dp"
+        android:layout_height="105dp"
+        android:rotation="45"
+        android:rotationX="180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abanico" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="103dp"
+        android:layout_height="105dp"
+        android:rotation="45"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/abanico" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -19,7 +45,7 @@
         app:srcCompat="@drawable/portada" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/txtUsuarioLogueo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -32,58 +58,59 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/txtContraseñaLogueo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:ems="10"
-        android:hint="@string/contrasenya"
+        android:hint="@string/contrasenia"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuarioLogueo" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnIniciaSesion"
+        style="@style/botonIniciarSesion"
         android:layout_width="109dp"
         android:layout_height="36dp"
         android:layout_marginStart="88dp"
         android:layout_marginTop="24dp"
-        android:backgroundTint="@color/white"
-        android:foregroundTint="#FFFFFF"
-        android:text="@string/loguearse"
-        android:textColor="#0087FD"
-        android:textSize="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/txtContraseñaLogueo" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnRegistro"
+        style="@style/botonRegistrar"
         android:layout_width="117dp"
         android:layout_height="38dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="84dp"
-        android:backgroundTint="#53D9F1"
-        android:foregroundTint="#000000"
         android:text="@string/registrarse"
-        android:textColor="@color/black"
-        android:textColorLink="#FFFFFF"
-        android:textSize="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/txtContraseñaLogueo" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnSinSesion"
+        style="@style/botonSinLogueo"
         android:layout_width="178dp"
         android:layout_height="40dp"
         android:layout_marginBottom="40dp"
-        android:backgroundTint="@color/colorBotones"
         android:text="@string/sinsesion"
-        android:textColor="@color/black"
-        android:textSize="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="103dp"
+        android:layout_height="105dp"
+        android:rotation="-45"
+        android:rotationX="180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abanico" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
