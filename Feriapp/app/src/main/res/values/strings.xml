@@ -7,4 +7,5 @@
     <string name="contrasenia">Contraseña</string>
     <string name="introducirDatos">Rellene los siguientes campos:</string>
     <string name="crearUsuario">Crear usuario</string>
+    <string name="dueño">Dueño de caseta</string>
 </resources>

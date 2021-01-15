@@ -8,14 +8,16 @@ public class Caseta {
     private int aforoMaximo;
     private int aforoActual;
     private String horario;
+    private boolean tipoCaseta;
 
-    public Caseta(int numeroCaseta, String nombreCaseta, String nombreCalle, int aforoMaximo, int aforoActual, String horario) {
+    public Caseta(int numeroCaseta, String nombreCaseta, String nombreCalle, int aforoMaximo, int aforoActual, String horario, boolean tipoCaseta) {
         this.numeroCaseta = numeroCaseta;
         this.nombreCaseta = nombreCaseta;
         this.nombreCalle = nombreCalle;
         this.aforoMaximo = aforoMaximo;
         this.aforoActual = aforoActual;
         this.horario = horario;
+        this.tipoCaseta = tipoCaseta;
     }
 
     public int getNumeroCaseta() {
@@ -66,6 +68,14 @@ public class Caseta {
         this.horario = horario;
     }
 
+    public boolean isTipoCaseta() {
+        return tipoCaseta;
+    }
+
+    public void setTipoCaseta(boolean tipoCaseta) {
+        this.tipoCaseta = tipoCaseta;
+    }
+
     @Override
     public String toString() {
         return "Caseta{" +
@@ -75,6 +85,7 @@ public class Caseta {
                 ", aforoMaximo=" + aforoMaximo +
                 ", aforoActual=" + aforoActual +
                 ", horario='" + horario + '\'' +
+                ", tipoCaseta=" + tipoCaseta +
                 '}';
     }
 }
