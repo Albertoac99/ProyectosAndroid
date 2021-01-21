@@ -29,7 +29,7 @@ public class CrearUsuario extends AppCompatActivity {
 
         context = getApplicationContext();
         txtUsuarioRegistro = findViewById(R.id.txtUsuarioRegistro);
-        txtContraseñaRegistro = findViewById(R.id.txtContraseñaRegistro);
+        txtContraseñaRegistro = findViewById(R.id.txtContraseniaRegistro);
         btnCrearUsuario = findViewById(R.id.btnCrearUsuario);
         swchDuenio = findViewById(R.id.swchDueño);
 

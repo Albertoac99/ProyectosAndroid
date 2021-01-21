@@ -32,7 +32,7 @@ public class Inicio extends AppCompatActivity {
 
         btnIniciaSesion.setOnClickListener( v -> {
 
-        intent = new Intent(getApplicationContext(), CrearUsuario.class);
+        intent = new Intent(getApplicationContext(), ListaCasetas.class);
 
         startActivity(intent);
 

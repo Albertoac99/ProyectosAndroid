@@ -15,6 +15,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.aranda.feriapp.R;
 
+import view.ListaCasetas;
+
 import static logic.Datos.casetas;
 
 public class AdaptadorCaseta extends RecyclerView.Adapter<AdaptadorCaseta.HolderProducto>{
@@ -42,15 +44,17 @@ public class AdaptadorCaseta extends RecyclerView.Adapter<AdaptadorCaseta.Holder
 
     @Override
     public void onBindViewHolder(@NonNull AdaptadorCaseta.HolderProducto holder, int position) {
-        holder.txtNombre.setText(casetas.get(position).);
-        holder.txtPrecio.setText(casetas.get(position).);
-        holder.ratingBar.setRating(casetas.get(position).);
+        holder.txtNombreCaseta.setText(casetas.get(position).getNombreCaseta());
+        holder.txtAforoCaseta.setText(casetas.get(position).getAforoActual()+"/"+casetas.get(position).getAforoMaximo());
+        holder.txtHorarioCaseta.setText(casetas.get(position).getHorario());
 
-        holder.cardProducto.setOnClickListener(new View.OnClickListener() {
+        holder.imgCaseta.setImageResource(R.drawable.gitana);
+
+        holder.cardCaseta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 System.out.println("Informacion pulsada" +position);
-                Intent intent = new Intent(c, Editar.class);
+                Intent intent = new Intent(c, ListaCasetas.class);
                 posicion = position;
                 c.startActivity(intent);
             }
@@ -65,20 +69,20 @@ public class AdaptadorCaseta extends RecyclerView.Adapter<AdaptadorCaseta.Holder
 
     public static class HolderProducto extends RecyclerView.ViewHolder{
 
-        CardView cardProducto;
-        TextView txtNombre;
-        TextView txtPrecio;
-        RatingBar ratingBar;
-        ImageView imgView;
+        CardView cardCaseta;
+        TextView txtNombreCaseta;
+        TextView txtAforoCaseta;
+        TextView txtHorarioCaseta;
+        ImageView imgCaseta;
 
         public HolderProducto(@NonNull View itemView) {
             super(itemView);
 
-            cardProducto = itemView.findViewById(R.id.cardProducto);
-            txtNombre = itemView.findViewById(R.id.txtNombre);
-            txtPrecio = itemView.findViewById(R.id.txtPrecio);
-            ratingBar = itemView.findViewById(R.id.ratingBar);
-            imgView = itemView.findViewById(R.id.imgView);
+            cardCaseta = itemView.findViewById(R.id.cardCaseta);
+            txtNombreCaseta = itemView.findViewById(R.id.txtNombreCaseta);
+            txtAforoCaseta = itemView.findViewById(R.id.txtAforoCaseta);
+            txtHorarioCaseta = itemView.findViewById(R.id.txtHorarioCaseta);
+            imgCaseta = itemView.findViewById(R.id.imgCaseta);
         }
 
 
