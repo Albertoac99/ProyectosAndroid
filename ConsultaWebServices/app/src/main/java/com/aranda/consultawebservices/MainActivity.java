@@ -22,6 +22,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     Spinner Mispinner;
+    private Coche miCoche;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,25 +86,10 @@ public class MainActivity extends AppCompatActivity {
 
                 Gson gson = new Gson();
                 Type type = new TypeToken<List<Coche>>(){}.getType();
-                List<Coche> lstCoches = new ArrayList<Coche>();
-                lstCoches = gson.fromJson(resultado, type);
+                List<Coche> lstCoches = gson.fromJson(resultado, type);
 
-                List<String> listaMarcas = new ArrayList<>();
+                miCoche = lstCoches.get(0);
 
-                for(Coche c : lstCoches){
-
-                    listaMarcas.add(c.getMarca());
-
-                }
-
-                Mispinner.setAdapter(new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, listaMarcas));
-
-
-
-
-                 for(Coche c : lstCoches){
-                    Log.i("ALBERTO", c.toString());
-                }
 
             }
         }
@@ -156,9 +142,6 @@ public class MainActivity extends AppCompatActivity {
             }
 
             Mispinner.setAdapter(new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, listaMarcas));
-
-
-
 
              for(Coche c : lstCoches){
                 Log.i("ALBERTO", c.toString());

@@ -10,22 +10,25 @@ import com.aranda.feriapp.R;
 
 import java.util.ArrayList;
 
+import controller.ContListaCasetas;
 import logic.AdaptadorCaseta;
 import logic.Datos;
 import model.Caseta;
 
+import static logic.LogFeriapp.lstCasetas;
+
 public class ListaCasetas extends AppCompatActivity {
 
-    RecyclerView rcvCasetas;
+
     AdaptadorCaseta adaptadorCaseta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_casetas);
-        Datos.casetas = getElements();
+        ContListaCasetas.obtenerCasetas();
 
-        rcvCasetas = findViewById(R.id.rcvCasetas);
+        RecyclerView rcvCasetas = findViewById(R.id.rcvCasetas);
         rcvCasetas.setHasFixedSize(true);
 
         LinearLayoutManager llm = new LinearLayoutManager(this);
