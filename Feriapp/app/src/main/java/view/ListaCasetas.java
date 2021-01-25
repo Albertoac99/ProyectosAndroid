@@ -31,13 +31,13 @@ public class ListaCasetas extends AppCompatActivity {
         RecyclerView rcvCasetas = findViewById(R.id.rcvCasetas);
         rcvCasetas.setHasFixedSize(true);
 
-        LinearLayoutManager llm = new LinearLayoutManager(this);
+        /*LinearLayoutManager llm = new LinearLayoutManager(this);
         rcvCasetas.setLayoutManager(llm);
 
         adaptadorCaseta = new AdaptadorCaseta(this);
         rcvCasetas.setAdapter(adaptadorCaseta);
         adaptadorCaseta.refrescar();
-
+*/
     }
 
 

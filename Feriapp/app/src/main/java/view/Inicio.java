@@ -11,10 +11,12 @@ import android.widget.EditText;
 
 import com.aranda.feriapp.R;
 
+import controller.ContInicio;
+
 public class Inicio extends AppCompatActivity {
 
-    EditText txtUsuarioLogueo;
-    EditText txtContraseñaLogueo;
+    public static EditText txtUsuarioLogueo;
+    public static EditText txtContraseñaLogueo;
     Button btnIniciaSesion;
     Button btnRegistro;
     Button btnSinSesion;
@@ -32,6 +34,8 @@ public class Inicio extends AppCompatActivity {
         btnSinSesion = findViewById(R.id.btnSinSesion);
 
         btnIniciaSesion.setOnClickListener( v -> {
+
+        ContInicio.Logueo();
 
         intent = new Intent(getApplicationContext(), ListaCasetas.class);
 

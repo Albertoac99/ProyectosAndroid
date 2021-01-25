@@ -1,0 +1,16 @@
+<resources>
+
+    <string-array name="entries_responder">
+
+        <item>Solo al remitente</item>
+        <item>A todos</item>
+
+    </string-array>
+    <string-array name="values_responder">
+
+        <item>R_1</item>
+        <item>R_N</item>
+
+    </string-array>
+
+</resources>

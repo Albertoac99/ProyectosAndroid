@@ -1,0 +1,65 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/cabecera_mensaje">
+
+        <EditTextPreference
+            app:key="Firma"
+            app:title="Su firma"
+            app:useSimpleSummaryProvider="true"
+            />
+
+        <ListPreference
+            app:key="responder"
+            app:title="Responder"
+            app:defaultValue="R_1"
+            app:entries="@array/entries_responder"
+            app:entryValues="@array/values_responder"
+            app:useSimpleSummaryProvider="true"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/cabecera_sincronizar">
+
+        <SwitchPreference
+            app:key="sincronizar"
+            app:title="Sincronizar al incio"
+            />
+
+        <SwitchPreference
+            app:key="adjuntos"
+            app:title="Descargar archivos adjuntos"
+            app:dependency="sincronizar"
+            app:summaryOn="Descargar automáticamente los archivos adjuntos de los correos."
+            app:summaryOff="Descargar manualmente los archivos cuando se soliciten."
+            />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

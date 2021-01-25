@@ -7,6 +7,7 @@ import model.Caseta;
 
 public class Datos {
 
-    public static List<Caseta> casetas;
+    public static ArrayList<Caseta> casetas;
+    public static int opcion;
 
 }
