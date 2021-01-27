@@ -19,7 +19,7 @@ import view.ListaCasetas;
 
 import static logic.Datos.casetas;
 
-public class AdaptadorCaseta extends RecyclerView.Adapter<AdaptadorCaseta.HolderProducto>{
+public class AdaptadorCaseta extends RecyclerView.Adapter<AdaptadorCaseta.HolderCaseta>{
 
     Context c;
     public static int posicion;
@@ -37,13 +37,13 @@ public class AdaptadorCaseta extends RecyclerView.Adapter<AdaptadorCaseta.Holder
 
     @NonNull
     @Override
-    public AdaptadorCaseta.HolderProducto onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public AdaptadorCaseta.HolderCaseta onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.casetas,parent,false);
-        return new HolderProducto(v);
+        return new HolderCaseta(v);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull AdaptadorCaseta.HolderProducto holder, int position) {
+    public void onBindViewHolder(@NonNull AdaptadorCaseta.HolderCaseta holder, int position) {
         holder.txtNombreCaseta.setText(Datos.casetas.get(position).getNombreCaseta());
         holder.txtAforoCaseta.setText(Datos.casetas.get(position).getAforoActual()+"/"+casetas.get(position).getAforoMaximo());
         holder.txtHorarioCaseta.setText(Datos.casetas.get(position).getHorario());
@@ -67,7 +67,7 @@ public class AdaptadorCaseta extends RecyclerView.Adapter<AdaptadorCaseta.Holder
     }
 
 
-    public static class HolderProducto extends RecyclerView.ViewHolder{
+    public static class HolderCaseta extends RecyclerView.ViewHolder{
 
         CardView cardCaseta;
         TextView txtNombreCaseta;
@@ -75,7 +75,7 @@ public class AdaptadorCaseta extends RecyclerView.Adapter<AdaptadorCaseta.Holder
         TextView txtHorarioCaseta;
         ImageView imgCaseta;
 
-        public HolderProducto(@NonNull View itemView) {
+        public HolderCaseta(@NonNull View itemView) {
             super(itemView);
 
             cardCaseta = itemView.findViewById(R.id.cardCaseta);

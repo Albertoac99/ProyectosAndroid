@@ -1,7 +1,5 @@
 package controller;
 
-import android.content.Intent;
-
 import logic.LogFeriapp;
 import view.CrearUsuario;
 import view.Inicio;
@@ -9,26 +7,13 @@ import view.Inicio;
 public class ContCrearUsuario {
 
 
-    public static boolean crearUsuario() {
-        boolean bExito;
-
-        if (CrearUsuario.txtUsuarioRegistro.getText().toString().equals("")){
-
-            bExito = false;
+    public static void comprobarValores() {
+        if (CrearUsuario.txtUsuarioRegistro.getText().toString().equals("") || CrearUsuario.txtContraseñaRegistro.getText().toString().equals("")){
+            LogFeriapp.mensajeCampos("Debe rellenar todos los campos", Inicio.context);
         }
-        else if(CrearUsuario.txtContraseñaRegistro.getText().toString().equals("")){
-
-            bExito = false;
+        else {
+            LogFeriapp.comprobarUsuario();
         }
-        else{
 
-            bExito = true;
-        }
-        return bExito;
-    }
-
-    public static void mensajeCampos() {
-
-        LogFeriapp.mensajeCampos();
     }
 }

@@ -2,16 +2,18 @@ package view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
-import android.net.wifi.p2p.WifiP2pManager;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 
 import com.aranda.feriapp.R;
 
 import controller.ContInicio;
+import logic.Datos;
+import logic.LogFeriapp;
+
 
 public class Inicio extends AppCompatActivity {
 
@@ -21,12 +23,14 @@ public class Inicio extends AppCompatActivity {
     Button btnRegistro;
     Button btnSinSesion;
     Intent intent;
+    public static Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        context = getApplicationContext();
         txtUsuarioLogueo = findViewById(R.id.txtUsuarioLogueo);
         txtContraseñaLogueo = findViewById(R.id.txtContraseñaLogueo);
         btnIniciaSesion = findViewById(R.id.btnIniciaSesion);
@@ -34,13 +38,7 @@ public class Inicio extends AppCompatActivity {
         btnSinSesion = findViewById(R.id.btnSinSesion);
 
         btnIniciaSesion.setOnClickListener( v -> {
-
-        ContInicio.Logueo();
-
-        intent = new Intent(getApplicationContext(), ListaCasetas.class);
-
-        startActivity(intent);
-
+            ContInicio.comprobarValores();
         });
 
         btnRegistro.setOnClickListener( v -> {

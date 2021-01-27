@@ -11,7 +11,7 @@
     <string name="perfil">Perfil</string>
     <string name="filtrar">Filtrar</string>
     <string name="publica">Casetas Públicas</string>
-    <string name="privada">Casetas</string>
+    <string name="privada">Casetas Privadas</string>
     <string name="espacio">Casetas no llenas</string>
     <string name="iniciarSesion">Iniciar Sesión</string>
 </resources>

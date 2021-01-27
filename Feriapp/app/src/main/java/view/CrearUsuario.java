@@ -18,8 +18,6 @@ public class CrearUsuario extends AppCompatActivity {
     public static EditText txtUsuarioRegistro;
     public static EditText txtContraseñaRegistro;
     Button btnCrearUsuario;
-    public static Switch swchDuenio;
-    Intent intent;
     public static Context context;
 
     @Override
@@ -31,21 +29,9 @@ public class CrearUsuario extends AppCompatActivity {
         txtUsuarioRegistro = findViewById(R.id.txtUsuarioRegistro);
         txtContraseñaRegistro = findViewById(R.id.txtContraseniaRegistro);
         btnCrearUsuario = findViewById(R.id.btnCrearUsuario);
-        swchDuenio = findViewById(R.id.swchDueño);
 
         btnCrearUsuario.setOnClickListener( v -> {
-
-            if(ContCrearUsuario.crearUsuario()){
-                intent = new Intent(getApplicationContext(), Inicio.class);
-
-                startActivity(intent);
-            }
-            else{
-                ContCrearUsuario.mensajeCampos();
-            }
-
-
-
+        ContCrearUsuario.comprobarValores();
         });
 
     }

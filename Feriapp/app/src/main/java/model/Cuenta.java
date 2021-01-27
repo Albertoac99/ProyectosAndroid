@@ -5,13 +5,11 @@ public class Cuenta {
     private String usuario;
     private String contrasenia;
     private int tipoUsuario;
-    private boolean fotoPerfil;
 
-    public Cuenta(String usuario, String contrasenia, int tipoUsuario, boolean fotoPerfil) {
+    public Cuenta(String usuario, String contrasenia, int tipoUsuario) {
         this.usuario = usuario;
         this.contrasenia = contrasenia;
         this.tipoUsuario = tipoUsuario;
-        this.fotoPerfil = fotoPerfil;
     }
 
     public String getUsuario() {
@@ -38,13 +36,7 @@ public class Cuenta {
         this.tipoUsuario = tipoUsuario;
     }
 
-    public boolean isFotoPerfil() {
-        return fotoPerfil;
-    }
 
-    public void setFotoPerfil(boolean fotoPerfil) {
-        this.fotoPerfil = fotoPerfil;
-    }
 
     @Override
     public String toString() {
@@ -52,7 +44,6 @@ public class Cuenta {
                 "usuario='" + usuario + '\'' +
                 ", contrasenia='" + contrasenia + '\'' +
                 ", tipoUsuario=" + tipoUsuario +
-                ", fotoPerfil=" + fotoPerfil +
                 '}';
     }
 }
