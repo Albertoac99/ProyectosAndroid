@@ -1,12 +1,14 @@
 package controller;
 
-import logic.Datos;
 import logic.LogFeriapp;
 
 public class ContListaCasetas {
 
-    public static void obtenerCasetas() {
+    public static void obtenerTipoCaseta(int i) {
+        LogFeriapp.traerTipoCaseta(i);
+    }
 
-
+    public static void obtenerCasetasAforo() {
+        LogFeriapp.traerCasetasAforo();
     }
 }

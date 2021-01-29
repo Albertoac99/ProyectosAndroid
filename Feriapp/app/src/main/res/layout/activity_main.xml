@@ -91,18 +91,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtContraseñaLogueo" />
 
-    <Button
-        android:id="@+id/btnSinSesion"
-        style="@style/botonSinLogueo"
-        android:layout_width="178dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="40dp"
-        android:text="@string/sinsesion"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="103dp"

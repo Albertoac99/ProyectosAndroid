@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -48,7 +47,12 @@ public class AdaptadorCaseta extends RecyclerView.Adapter<AdaptadorCaseta.Holder
         holder.txtAforoCaseta.setText(Datos.casetas.get(position).getAforoActual()+"/"+casetas.get(position).getAforoMaximo());
         holder.txtHorarioCaseta.setText(Datos.casetas.get(position).getHorario());
 
-        holder.imgCaseta.setImageResource(R.drawable.gitana);
+        if(casetas.get(position).isTipoCaseta()){
+            holder.imgCaseta.setImageResource(R.drawable.gitana);
+        }
+        else{
+            holder.imgCaseta.setImageResource(R.drawable.gitana);
+        }
 
         holder.cardCaseta.setOnClickListener(new View.OnClickListener() {
             @Override

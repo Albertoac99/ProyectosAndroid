@@ -12,6 +12,9 @@
     <string name="filtrar">Filtrar</string>
     <string name="publica">Casetas Públicas</string>
     <string name="privada">Casetas Privadas</string>
-    <string name="espacio">Casetas no llenas</string>
+    <string name="espacio">Casetas Con Aforo</string>
     <string name="iniciarSesion">Iniciar Sesión</string>
+    <string name="cambiarImagen">Cambiar Imagen</string>
+    <string name="EditarCampos">Editar</string>
+    <string name="GuardarCambios">Guardar Cambios</string>
 </resources>

@@ -16,7 +16,7 @@
     <style name="Theme.FeriappCrear" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/temaCrear</item>
-        <item name="colorPrimaryVariant">@color/temaCrear</item>
+        <item name="colorPrimaryVariant">#6E0202</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

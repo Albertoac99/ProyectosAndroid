@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -69,16 +70,17 @@ public class ListaCasetas extends AppCompatActivity {
         switch (item.getItemId()){
 
             case R.id.itmPerfil:
-
+                Intent intent = new Intent(getApplicationContext(),Perfil.class);
+                startActivity(intent);
                 break;
             case R.id.itmEspacio:
-
+                ContListaCasetas.obtenerCasetasAforo();
                 break;
             case R.id.itmPublica:
-
+                ContListaCasetas.obtenerTipoCaseta(0);
                 break;
             case R.id.itmPrivada:
-
+                ContListaCasetas.obtenerTipoCaseta(1);
                 break;
 
         }

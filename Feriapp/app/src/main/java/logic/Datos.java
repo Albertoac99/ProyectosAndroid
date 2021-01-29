@@ -11,5 +11,6 @@ public class Datos {
     public static ArrayList<Caseta> casetas;
     public static int opcion;
     public static List<Cuenta> cuentas;
+    public static List<Cuenta> posibleCuenta;
 
 }

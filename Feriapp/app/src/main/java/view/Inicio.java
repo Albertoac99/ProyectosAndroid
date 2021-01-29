@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -21,7 +22,6 @@ public class Inicio extends AppCompatActivity {
     public static EditText txtContraseñaLogueo;
     Button btnIniciaSesion;
     Button btnRegistro;
-    Button btnSinSesion;
     Intent intent;
     public static Context context;
 
@@ -35,7 +35,6 @@ public class Inicio extends AppCompatActivity {
         txtContraseñaLogueo = findViewById(R.id.txtContraseñaLogueo);
         btnIniciaSesion = findViewById(R.id.btnIniciaSesion);
         btnRegistro = findViewById(R.id.btnRegistro);
-        btnSinSesion = findViewById(R.id.btnSinSesion);
 
         btnIniciaSesion.setOnClickListener( v -> {
             ContInicio.comprobarValores();
@@ -49,13 +48,6 @@ public class Inicio extends AppCompatActivity {
 
         });
 
-        btnSinSesion.setOnClickListener( v -> {
-
-        intent = new Intent(getApplicationContext(), CrearUsuario.class);
-
-        startActivity(intent);
-
-        });
 
     }
 }
