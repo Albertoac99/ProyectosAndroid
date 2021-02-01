@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import com.aranda.feriapp.R;
 
@@ -20,12 +21,14 @@ public class Perfil extends AppCompatActivity {
     Button btnCambiaFoto;
     public static Button btnGuardarCambios;
     public static Context context;
+    public static ImageView imgFotoPerfil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil);
         context = getApplicationContext();
+        imgFotoPerfil = findViewById(R.id.imgFotoPerfil);
         txtNuevaContrasenia = findViewById(R.id.txtNuevaContrasenia);
         txtNuevoUsuario = findViewById(R.id.txtNuevoUsuario);
         btnEditar = findViewById(R.id.btnEditarCampos);

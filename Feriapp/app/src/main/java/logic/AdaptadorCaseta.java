@@ -47,11 +47,11 @@ public class AdaptadorCaseta extends RecyclerView.Adapter<AdaptadorCaseta.Holder
         holder.txtAforoCaseta.setText(Datos.casetas.get(position).getAforoActual()+"/"+casetas.get(position).getAforoMaximo());
         holder.txtHorarioCaseta.setText(Datos.casetas.get(position).getHorario());
 
-        if(casetas.get(position).isTipoCaseta()){
+        if(casetas.get(position).getTipoCaseta()==1){
             holder.imgCaseta.setImageResource(R.drawable.gitana);
         }
         else{
-            holder.imgCaseta.setImageResource(R.drawable.gitana);
+            holder.imgCaseta.setImageResource(R.drawable.gitanaverde);
         }
 
         holder.cardCaseta.setOnClickListener(new View.OnClickListener() {

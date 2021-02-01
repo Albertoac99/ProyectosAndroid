@@ -17,4 +17,6 @@
     <string name="cambiarImagen">Cambiar Imagen</string>
     <string name="EditarCampos">Editar</string>
     <string name="GuardarCambios">Guardar Cambios</string>
+    <string name="casetaPublica">-- Pública</string>
+    <string name="casetaPrivada">-- Privada</string>
 </resources>
