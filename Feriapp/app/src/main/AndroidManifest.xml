@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FeriappCrear">
-        <activity android:name="view.Perfil"></activity>
+        <activity android:name="view.Preferencias"></activity>
+        <activity android:name="view.Perfil" />
         <activity android:name="view.ListaCasetas" />
         <activity android:name="view.CrearUsuario" />
         <activity android:name="view.Inicio">

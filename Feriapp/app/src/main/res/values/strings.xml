@@ -19,4 +19,8 @@
     <string name="GuardarCambios">Guardar Cambios</string>
     <string name="casetaPublica">-- Pública</string>
     <string name="casetaPrivada">-- Privada</string>
+    <string name="cerrarSesion">Cerrar Sesion</string>
+    <string name="id">Id</string>
+    <string name="tipoUsuario">TipoUsuario</string>
+    <string name="contrasenia2">Contrasenia</string>
 </resources>

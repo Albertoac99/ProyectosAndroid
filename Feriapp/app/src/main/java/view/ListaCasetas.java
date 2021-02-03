@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -23,6 +24,7 @@ import logic.AdaptadorCaseta;
 import logic.Datos;
 import model.Caseta;
 
+import static logic.Datos.cuentas;
 import static logic.LogFeriapp.lstCasetas;
 
 public class ListaCasetas extends AppCompatActivity {
@@ -81,6 +83,17 @@ public class ListaCasetas extends AppCompatActivity {
                 break;
             case R.id.itmPrivada:
                 ContListaCasetas.obtenerTipoCaseta(1);
+                break;
+            case R.id.itmCerrarSesion:
+                // Escribir en las Preferencias
+                SharedPreferences.Editor editorPreferencias = Inicio.pref.edit();
+                editorPreferencias.putString("Id", "");
+                editorPreferencias.putString("Usuario","");
+                editorPreferencias.putString("Contrasenia","");
+                editorPreferencias.putString("TipoUsuario", "");
+                editorPreferencias.apply();
+                Intent intent1 = new Intent(getApplicationContext(), Inicio.class);
+                startActivity(intent1);
                 break;
 
         }

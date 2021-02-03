@@ -3,6 +3,7 @@ package logic;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -51,7 +52,7 @@ import static logic.Datos.posibleCuenta;
 
 public class LogFeriapp {
     public static ArrayList<Caseta> lstCasetas;
-    private Bitmap bitmap;
+
 
     public static void mensajeCampos(String sMensaje, Context context) {
         Toast.makeText(context, sMensaje, Toast.LENGTH_SHORT).show();
@@ -201,7 +202,13 @@ public class LogFeriapp {
 
 
                 if (Datos.cuentas.size()>0) {
-
+                    // Escribir en las Preferencias
+                    SharedPreferences.Editor editorPreferencias = Inicio.pref.edit();
+                    editorPreferencias.putString("Id", ""+cuentas.get(0).getIdCuenta());
+                    editorPreferencias.putString("Usuario",cuentas.get(0).getUsuario());
+                    editorPreferencias.putString("Contrasenia",cuentas.get(0).getContrasenia());
+                    editorPreferencias.putString("TipoUsuario", ""+cuentas.get(0).getTipoUsuario());
+                    editorPreferencias.apply();
                     LogFeriapp.traerCasetas();
                 } else {
                     LogFeriapp.mensajeCampos("Usuario o contraseña incorrecto", Inicio.context);
@@ -282,7 +289,7 @@ public class LogFeriapp {
 
         @Override
         public void onPostExecute(Void aVoid){
-            Intent intent = new Intent(Perfil.context, Inicio.class);
+            Intent intent = new Intent(Perfil.context, ListaCasetas.class);
 
             Perfil.context.startActivity(intent);
 
@@ -290,27 +297,11 @@ public class LogFeriapp {
 
 
     }
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode == RESULT_OK){
-            try {
-
-                Uri path = data.getData();
-                bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(path), null, null);
-                imgFoto.setImageBitmap(bitmap);
-
-            }catch (NullPointerException | FileNotFoundException ignored){
 
 
-            }
-        }
+    public static void download() {
 
-    }
-
-    private void download() {
-
-        String url = "https://media-exp1.licdn.com/dms/image/C4E03AQEwZqUKRtZI8A/profile-displayphoto-shrink_800_800/0/1610477742377?e=1616630400&v=beta&t=ksoG0ThlnJAmNV5w9CpUqU1Jm1qZBMFUdt2p_SYJTHY";
+        String url = "https://arandacastroalberto.000webhostapp.com/php/imagenes/"+cuentas.get(0).getIdCuenta()+".jpg";
 
         Perfil.imgFotoPerfil.setImageDrawable(null);
 
@@ -320,54 +311,7 @@ public class LogFeriapp {
                 .apply(RequestOptions.centerCropTransform())
                 .into(Perfil.imgFotoPerfil);
 
-        Toast.makeText(Perfil.context, "Imagen descargada", Toast.LENGTH_SHORT).show();
 
 
     }
-    private void selectFromGallery() {
-        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        intent.setType("image/");
-        startActivityForResult(intent.createChooser(intent, "Seleccione una aplicacion"),0);
-    }
-
-    private void upload() {
-
-        String strURL = "https://arandacastroalberto.000webhostapp.com/imagenes/imagen.php";
-
-        final ProgressDialog loading = ProgressDialog.show(Perfil.context, "Subiendo...", "Espere por favor", false, false);
-
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, strURL,
-                s -> {
-                    loading.dismiss();
-                    Toast.makeText(Perfil.context, "Imagen subida con exito", Toast.LENGTH_SHORT).show();
-                },
-                volleyError -> {
-                    loading.dismiss();
-                    Toast.makeText(Perfil.context, volleyError.getMessage(), Toast.LENGTH_SHORT).show();
-                }
-
-        ){
-            @Override
-            public Map<String, String> getParams(){
-                Hashtable<String, String> params = new Hashtable<>();
-
-                params.put("imagenData", getStringImage(bitmap));
-                params.put("imagenName", cuentas.get(0).getUsuario());
-
-                return params;
-            }
-        };
-        RequestQueue requestQueue = Volley.newRequestQueue(Perfil.context);
-        requestQueue.add(stringRequest);
-
-    }
-    private String getStringImage(Bitmap bmp){
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        bmp.compress(Bitmap.CompressFormat.JPEG, 100, baos);
-        byte [] imageBytes = baos.toByteArray();
-
-
-        return Base64.encodeToString(imageBytes, Base64.DEFAULT);
-    }
-
 }

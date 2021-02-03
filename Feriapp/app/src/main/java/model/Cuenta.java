@@ -2,14 +2,20 @@ package model;
 
 public class Cuenta {
 
+    private int idCuenta;
     private String usuario;
     private String contrasenia;
     private int tipoUsuario;
 
-    public Cuenta(String usuario, String contrasenia, int tipoUsuario) {
+    public Cuenta(int idCuenta, String usuario, String contrasenia, int tipoUsuario) {
+        this.idCuenta = idCuenta;
         this.usuario = usuario;
         this.contrasenia = contrasenia;
         this.tipoUsuario = tipoUsuario;
+    }
+
+    public int getIdCuenta() {
+        return idCuenta;
     }
 
     public String getUsuario() {

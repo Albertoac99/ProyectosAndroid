@@ -20,4 +20,7 @@
                 android:title="@string/espacio" />
         </menu>
     </item>
+    <item
+        android:id="@+id/itmCerrarSesion"
+        android:title="@string/cerrarSesion" />
 </menu>
