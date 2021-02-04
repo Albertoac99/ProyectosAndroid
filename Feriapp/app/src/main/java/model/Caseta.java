@@ -9,8 +9,9 @@ public class Caseta {
     private int aforoActual;
     private String horario;
     private int tipoCaseta;
+    private int idPropietario;
 
-    public Caseta(int numeroCaseta, String nombreCaseta, String nombreCalle, int aforoMaximo, int aforoActual, String horario, int tipoCaseta) {
+    public Caseta(int numeroCaseta, String nombreCaseta, String nombreCalle, int aforoMaximo, int aforoActual, String horario, int tipoCaseta, int idPropietario) {
         this.numeroCaseta = numeroCaseta;
         this.nombreCaseta = nombreCaseta;
         this.nombreCalle = nombreCalle;
@@ -18,6 +19,7 @@ public class Caseta {
         this.aforoActual = aforoActual;
         this.horario = horario;
         this.tipoCaseta = tipoCaseta;
+        this.idPropietario = idPropietario;
     }
 
     public int getNumeroCaseta() {
@@ -76,6 +78,13 @@ public class Caseta {
         this.tipoCaseta = tipoCaseta;
     }
 
+    public int getIdPropietario() {
+        return idPropietario;
+    }
+    public void setIdPropietario(int idPropietario) {
+        this.idPropietario = idPropietario;
+    }
+
     @Override
     public String toString() {
         return "Caseta{" +
@@ -86,6 +95,7 @@ public class Caseta {
                 ", aforoActual=" + aforoActual +
                 ", horario='" + horario + '\'' +
                 ", tipoCaseta=" + tipoCaseta +
+                ", idPropietario=" + idPropietario +
                 '}';
     }
 }

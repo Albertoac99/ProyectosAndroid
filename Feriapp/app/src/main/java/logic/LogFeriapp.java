@@ -80,20 +80,17 @@ public class LogFeriapp {
 
     public static void traerCasetas(){
         // Intruccion para traer las casetas de la base de datos
-        opcion = 1;
         new LoadDatos_AsyncTask().execute("https://arandacastroalberto.000webhostapp.com/php/getCasetas.php");
     }
 
     public static void traerTipoCaseta(int tipo){
         // Instruccion para filtrar el tipo de caseta ( publica o privada);
-        opcion = 1;
         new LoadDatos_AsyncTask().execute("https://arandacastroalberto.000webhostapp.com/php/getCasetaLibre.php?tipoCaseta="+tipo);
 
     }
 
     public static void traerCasetasAforo(){
         // Instruccion para filtrar las casetas que tengan aforo disponible
-        opcion = 1;
         new LoadDatos_AsyncTask().execute("https://arandacastroalberto.000webhostapp.com/php/getCasetasAforo.php");
 
     }
@@ -140,19 +137,14 @@ public class LogFeriapp {
         public void onPostExecute(Void aVoid){
             super.onPostExecute(aVoid);
             Gson gson = new Gson();
-            if (opcion ==1) {
 
                 Type type = new TypeToken<List<Caseta>>() {}.getType();
 
                 Datos.casetas = gson.fromJson(resultado, type);
 
                 Intent intent = new Intent(Inicio.context, ListaCasetas.class);
-
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 Inicio.context.startActivity(intent);
-            }
-            else if(opcion == 2){
-
-            }
 
         }
 
