@@ -39,7 +39,6 @@ public class CrearUsuario extends AppCompatActivity {
     public static EditText txtUsuarioRegistro;
     public static EditText txtContraseñaRegistro;
     Button btnCrearUsuario;
-    ImageButton ibtnCambiarFoto;
     ImageView imgCambiarNuevaFoto;
     public static Context context;
     public static Bitmap bitmap;
@@ -49,7 +48,6 @@ public class CrearUsuario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crear_usuario);
 
-        ibtnCambiarFoto = findViewById(R.id.ibtnCambiarFoto);
         imgCambiarNuevaFoto = findViewById(R.id.imgNuevaFotoPerfil);
         context = getApplicationContext();
         txtUsuarioRegistro = findViewById(R.id.txtUsuarioRegistro);
@@ -58,10 +56,6 @@ public class CrearUsuario extends AppCompatActivity {
 
         btnCrearUsuario.setOnClickListener( v -> {
         ContCrearUsuario.comprobarValores();
-        });
-
-        ibtnCambiarFoto.setOnClickListener(v->{
-            selectFromGallery();
         });
 
     }

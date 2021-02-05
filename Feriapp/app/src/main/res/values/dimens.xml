@@ -1,6 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--Pantalla de inicio -->
+
     <dimen name="LetraBotones">8dp</dimen>
-    <dimen name="anchoFotoPerfil">118dp</dimen>
-    <dimen name="altoFotoPerfil">145dp</dimen>
+    <dimen name="anchoBotones">110dp</dimen>
+    <dimen name="altoBotones">35dp</dimen>
+
+    <dimen name="anchoFotoInicial">191dp</dimen>
+    <dimen name="altoFotoInicial">165dp</dimen>
+    <dimen name="distanciaSuperiorFoto">80dp</dimen>
+
+    <dimen name="separacionElementos">32dp</dimen>
+    <dimen name="anchoElementos">210dp</dimen>
+    <dimen name="altoElementos">45dp</dimen>
+
+    <!-- Pantalla de Inicio Horizontal-->
+
+    <dimen name="SeparacionFotoSuperior">16dp</dimen>
+    <dimen name="AnchoFotoHorizontal">111dp</dimen>
+    <dimen name="AltoFotoHorizontal">101dp</dimen>
+
+    <dimen name="separacionElementosHorizontal">24dp</dimen>
+    <dimen name="separacionBotonesHorizontalLateral">96dp</dimen>
+    <dimen name="separacionBotonesHorizontalVertical">32dp</dimen>
+
+    <!--Pantalla de Perfil -->
+    <dimen name="anchoFotoPerfil">162dp</dimen>
+    <dimen name="altoFotoPerfil">175dp</dimen>
+
+    <dimen name="separacionSuperiorFotoPerfil">60dp</dimen>
+    <dimen name="separacionCambiarImagen">40dp</dimen>
+    <dimen name="separacionGuardarInferior">28dp</dimen>
+    <dimen name="separacionUsuarioPerfil">32dp</dimen>
+    <dimen name="separacionContraseñaPerfil">36dp</dimen>
+    <dimen name="separacionEditarPerfil">52dp</dimen>
+
+    <dimen name="botonGuardarCambiosAncho">369dp</dimen>
+    <dimen name="botonGuardarCambiosAlto">45dp</dimen>
+
+    <!-- Pantalla de Perfil Horizontal -->
+
+    <dimen name="tamañoLetraCambiarImgHorizontal">8dp</dimen>
+    <dimen name="separacionFotoPerfilHorizontal">16dp</dimen>
+
+    <dimen name="separacionCambiarImgHorizontalV">52dp</dimen>
+    <dimen name="separacionCambiarImgHorizontalH">56dp</dimen>
+
+    <dimen name="cambiarImagenHorizontalAncho">130dp</dimen>
+    <dimen name="cambiarImagenHorizontalAlto">30dp</dimen>
+
+    <dimen name="imagenPerfilHorizontalAncho">95dp</dimen>
+    <dimen name="imagenPerfilHorizontalAlto">97dp</dimen>
+
+    <dimen name="separacionElementosPerfilHorizontal">28dp</dimen>
+    <dimen name="separacionGuardaImgHorizontal">28dp</dimen>
+
+    <!-- Pantalla de Crear Usuario -->
+
+    <dimen name="anchoFotoCrearPerfil">123dp</dimen>
+    <dimen name="altoFotoCrearPerfil">148dp</dimen>
+    <dimen name="separacionSuperiorFotoCrearPerfil">64dp</dimen>
+
+    <dimen name="RellenarCamposAncho">202dp</dimen>
+    <dimen name="RellenarCamposAlto">22dp</dimen>
+    <dimen name="RellenarCamposSeparacionSuperior">28dp</dimen>
+
+    <dimen name="SearacionElementosCrearUsuario">40dp</dimen>
+
+    <!-- Pantalla de Crear Usuario Horizontal -->
+
+    <dimen name="separacionElementosCrearHorizontal">16dp</dimen>
+    <dimen name="separacionBotonCrearHorizontal">28dp</dimen>
+
 </resources>

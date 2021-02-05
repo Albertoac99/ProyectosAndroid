@@ -10,11 +10,11 @@
     <ImageView
         android:id="@+id/imgNuevaFotoPerfil"
         style="@style/FotoDePerfil"
-        android:layout_width="123dp"
-        android:layout_height="148dp"
-        android:layout_marginTop="64dp"
+        android:layout_width="84dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/gitana" />
@@ -23,21 +23,10 @@
         android:id="@+id/txtUsuarioRegistro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/usuario"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtRellenarCampos" />
-
-    <TextView
-        android:id="@+id/txtRellenarCampos"
-        android:layout_width="202dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="28dp"
-        android:text="@string/introducirDatos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgNuevaFotoPerfil" />
@@ -46,12 +35,11 @@
         android:id="@+id/txtContraseniaRegistro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/contrasenia"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtUsuarioRegistro" />
 
@@ -60,11 +48,11 @@
         style="@style/crearUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginBottom="28dp"
         android:backgroundTint="#BD1414"
         android:textColor="#FAFAFA"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtContraseniaRegistro" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

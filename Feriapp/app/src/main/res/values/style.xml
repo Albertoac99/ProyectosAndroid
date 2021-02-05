@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- Pantalla de Inicio -->
+
+    <style name="UsuarioInicio">
+        <item name="android:layout_width">@dimen/anchoElementos</item>
+        <item name="android:layout_height">@dimen/altoElementos</item>
+        <item name="android:layout_marginTop">@dimen/separacionElementos</item>
+        <item name="android:hint">@string/usuario</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+    <style name="ContraseñaInicio">
+        <item name="android:layout_width">@dimen/anchoElementos</item>
+        <item name="android:layout_height">@dimen/altoElementos</item>
+        <item name="android:layout_marginTop">@dimen/separacionElementos</item>
+        <item name="android:hint">@string/contrasenia</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+    <style name="ImagenInicio">
+        <item name="android:layout_width">@dimen/anchoFotoInicial</item>
+        <item name="android:layout_height">@dimen/altoFotoInicial</item>
+        <item name="android:layout_marginTop">@dimen/distanciaSuperiorFoto</item>
+    </style>
+    <style name="BotonIniciarSesionInicio">
+
+
+    </style>
+    <style name="BotonRegistrarseInicio">
+
+
+    </style>
+
     <style name="botonIniciarSesion">
         <item name="android:backgroundTint">@color/white</item>
         <item name="android:text">@string/loguearse</item>
