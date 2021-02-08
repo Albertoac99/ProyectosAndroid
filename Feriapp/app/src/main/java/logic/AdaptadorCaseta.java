@@ -44,8 +44,8 @@ public class AdaptadorCaseta extends RecyclerView.Adapter<AdaptadorCaseta.Holder
     @Override
     public void onBindViewHolder(@NonNull AdaptadorCaseta.HolderCaseta holder, int position) {
         holder.txtNombreCaseta.setText(Datos.casetas.get(position).getNombreCaseta());
-        holder.txtAforoCaseta.setText(Datos.casetas.get(position).getAforoActual()+"/"+casetas.get(position).getAforoMaximo());
-        holder.txtHorarioCaseta.setText(Datos.casetas.get(position).getHorario());
+        holder.txtAforoCaseta.setText("Aforo: "+Datos.casetas.get(position).getAforoActual()+"/"+casetas.get(position).getAforoMaximo());
+        holder.txtHorarioCaseta.setText("Horario: "+Datos.casetas.get(position).getHorario());
 
         if(casetas.get(position).getTipoCaseta()==1){
             holder.imgCaseta.setImageResource(R.drawable.gitana);
