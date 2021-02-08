@@ -65,11 +65,14 @@
     <dimen name="RellenarCamposAlto">22dp</dimen>
     <dimen name="RellenarCamposSeparacionSuperior">28dp</dimen>
 
-    <dimen name="SearacionElementosCrearUsuario">40dp</dimen>
+    <dimen name="SeparacionElementosCrearUsuario">40dp</dimen>
 
     <!-- Pantalla de Crear Usuario Horizontal -->
 
     <dimen name="separacionElementosCrearHorizontal">16dp</dimen>
     <dimen name="separacionBotonCrearHorizontal">28dp</dimen>
+
+    <dimen name="AnchoFotoCrearUsuarioHorizontal">84dp</dimen>
+    <dimen name="AltoFotoCrearUsuarioHorizontal">100dp</dimen>
 
 </resources>

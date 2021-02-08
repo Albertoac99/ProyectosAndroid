@@ -9,12 +9,10 @@
 
     <EditText
         android:id="@+id/txtNuevoUsuario"
+        style="@style/UsuarioPerfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:ems="10"
-        android:hint="@string/usuario"
-        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,12 +20,10 @@
 
     <EditText
         android:id="@+id/txtNuevaContrasenia"
+        style="@style/ContraseñaPerfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
         android:ems="10"
-        android:hint="@string/contrasenia"
-        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,43 +31,32 @@
 
     <Button
         android:id="@+id/btnCambiarFoto"
+        style="@style/botonCambiarImagenPerfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:backgroundTint="@color/temaCrear"
-        android:text="@string/cambiarImagen"
-        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgFotoPerfil" />
 
     <Button
         android:id="@+id/btnEditarCampos"
+        style="@style/EditarPerfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:text="@string/EditarCampos"
-        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNuevaContrasenia" />
 
     <Button
         android:id="@+id/btnGuardarCambios"
-        android:layout_width="369dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="28dp"
-        android:text="@string/GuardarCambios"
-        android:textColor="#FFFFFF"
+        style="@style/GuardarCambiosPerfil"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imgFotoPerfil"
-        android:layout_width="162dp"
-        android:layout_height="175dp"
-        android:layout_marginTop="60dp"
+        style="@style/FotoPerfil"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

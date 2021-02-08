@@ -36,6 +36,7 @@
 
     <ImageView
         android:id="@+id/imgInicio"
+        style="@style/ImagenInicio"
         android:layout_width="191dp"
         android:layout_height="165dp"
         android:layout_marginTop="80dp"
@@ -46,9 +47,7 @@
 
     <EditText
         android:id="@+id/txtUsuarioLogueo"
-        android:layout_width="210dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="32dp"
+        style="@style/UsuarioInicio"
         android:ems="10"
         android:hint="@string/usuario"
         android:inputType="textPersonName"
@@ -59,9 +58,7 @@
 
     <EditText
         android:id="@+id/txtContraseñaLogueo"
-        android:layout_width="210dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="32dp"
+        style="@style/ContraseñaInicio"
         android:ems="10"
         android:hint="@string/contrasenia"
         android:inputType="textPassword"
@@ -73,9 +70,6 @@
     <Button
         android:id="@+id/btnIniciaSesion"
         style="@style/botonIniciarSesion"
-        android:layout_width="110dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtContraseñaLogueo" />
@@ -83,9 +77,6 @@
     <Button
         android:id="@+id/btnRegistro"
         style="@style/botonRegistrar"
-        android:layout_width="110dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="32dp"
         android:text="@string/registrarse"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

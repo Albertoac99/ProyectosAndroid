@@ -9,21 +9,18 @@
 
     <ImageView
         android:id="@+id/imgNuevaFotoPerfil"
-        style="@style/FotoDePerfil"
-        android:layout_width="123dp"
-        android:layout_height="148dp"
+        style="@style/FotoCrearUsuario"
         android:layout_marginTop="64dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/gitana" />
 
     <EditText
         android:id="@+id/txtUsuarioRegistro"
+        style="@style/UsuarioCrearUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:ems="10"
         android:hint="@string/usuario"
         android:inputType="textPersonName"
@@ -34,8 +31,7 @@
 
     <TextView
         android:id="@+id/txtRellenarCampos"
-        android:layout_width="202dp"
-        android:layout_height="22dp"
+        style="@style/rellenarCampos"
         android:layout_marginTop="28dp"
         android:text="@string/introducirDatos"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,23 +40,22 @@
 
     <EditText
         android:id="@+id/txtContraseniaRegistro"
+        style="@style/ContraseñaCrearPerfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:ems="10"
         android:hint="@string/contrasenia"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtUsuarioRegistro" />
 
     <Button
         android:id="@+id/btnCrearUsuario"
-        style="@style/crearUsuario"
+        style="@style/botonCrearUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:backgroundTint="#BD1414"
         android:textColor="#FAFAFA"
         app:layout_constraintEnd_toEndOf="parent"

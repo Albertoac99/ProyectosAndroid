@@ -22,45 +22,195 @@
         <item name="android:layout_height">@dimen/altoFotoInicial</item>
         <item name="android:layout_marginTop">@dimen/distanciaSuperiorFoto</item>
     </style>
-    <style name="BotonIniciarSesionInicio">
-
-
-    </style>
-    <style name="BotonRegistrarseInicio">
-
-
-    </style>
-
     <style name="botonIniciarSesion">
         <item name="android:backgroundTint">@color/white</item>
         <item name="android:text">@string/loguearse</item>
         <item name="android:textColor">@color/colorBotones</item>
         <item name="android:textSize">@dimen/LetraBotones</item>
+        <item name="android:layout_marginTop">@dimen/separacionElementos</item>
+        <item name="android:layout_width">@dimen/anchoBotones</item>
+        <item name="android:layout_height">@dimen/altoBotones</item>
     </style>
     <style name="botonRegistrar">
         <item name="android:backgroundTint">@color/white</item>
         <item name="android:text">@string/registrarse</item>
         <item name="android:textColor">@color/colorBotones</item>
         <item name="android:textSize">@dimen/LetraBotones</item>
-    </style>
-    <style name="botonSinLogueo">
-        <item name="android:backgroundTint">@color/white</item>
-        <item name="android:text">@string/sinsesion</item>
-        <item name="android:textColor">@color/colorBotones</item>
-        <item name="android:textSize">@dimen/LetraBotones</item>
+        <item name="android:layout_marginTop">@dimen/separacionElementos</item>
+        <item name="android:layout_width">@dimen/anchoBotones</item>
+        <item name="android:layout_height">@dimen/altoBotones</item>
     </style>
 
-    <style name="FotoDePerfil">
+    <!-- Pantalla de Inicio Horizontal-->
+
+    <style name="FotoInicioHorizontal">
+        <item name="android:layout_width">@dimen/AnchoFotoHorizontal</item>
+        <item name="android:layout_height">@dimen/AltoFotoHorizontal</item>
+        <item name="android:layout_marginTop">@dimen/SeparacionFotoSuperior</item>
+    </style>
+    <style name="UsuarioInicioHorizontal">
+        <item name="android:layout_width">@dimen/anchoElementos</item>
+        <item name="android:layout_height">@dimen/altoElementos</item>
+        <item name="android:layout_marginTop">@dimen/separacionElementosHorizontal</item>
+        <item name="android:hint">@string/usuario</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+    <style name="ContraseñaInicioHorizontal">
+        <item name="android:layout_width">@dimen/anchoElementos</item>
+        <item name="android:layout_height">@dimen/altoElementos</item>
+        <item name="android:layout_marginTop">@dimen/separacionElementosHorizontal</item>
+        <item name="android:hint">@string/contrasenia</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+    <style name="botonIniciarSesionHorizontal">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:text">@string/loguearse</item>
+        <item name="android:textColor">@color/colorBotones</item>
+        <item name="android:textSize">@dimen/LetraBotones</item>
+        <item name="android:layout_marginLeft">@dimen/separacionBotonesHorizontalLateral</item>
+        <item name="android:layout_marginBottom">@dimen/separacionBotonesHorizontalVertical</item>
+        <item name="android:layout_width">@dimen/anchoBotones</item>
+        <item name="android:layout_height">@dimen/altoBotones</item>
+    </style>
+    <style name="botonRegistrarHorizontal">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:text">@string/registrarse</item>
+        <item name="android:textColor">@color/colorBotones</item>
+        <item name="android:textSize">@dimen/LetraBotones</item>
+        <item name="android:layout_marginRight">@dimen/separacionBotonesHorizontalLateral</item>
+        <item name="android:layout_marginBottom">@dimen/separacionBotonesHorizontalVertical</item>
+        <item name="android:layout_width">@dimen/anchoBotones</item>
+        <item name="android:layout_height">@dimen/altoBotones</item>
+    </style>
+
+    <!-- Pantalla Crear Usuario -->
+
+    <style name="FotoCrearUsuario">
+        <item name="android:layout_width">@dimen/anchoFotoCrearPerfil</item>
+        <item name="android:layout_height">@dimen/altoFotoCrearPerfil</item>
+        <item name="android:layout_marginTop">@dimen/separacionSuperiorFotoCrearPerfil</item>
+    </style>
+    <style name="rellenarCampos">
+        <item name="android:layout_width">@dimen/RellenarCamposAncho</item>
+        <item name="android:layout_height">@dimen/RellenarCamposAlto</item>
+        <item name="android:layout_marginTop">@dimen/RellenarCamposSeparacionSuperior</item>
+        <item name="android:text">@string/introducirDatos</item>
+    </style>
+    <style name="UsuarioCrearUsuario">
+        <item name="android:hint">@string/usuario</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:layout_marginTop">@dimen/SeparacionElementosCrearUsuario</item>
+    </style>
+    <style name="ContraseñaCrearPerfil">
+        <item name="android:hint">@string/contrasenia</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:layout_marginTop">@dimen/SeparacionElementosCrearUsuario</item>
+    </style>
+    <style name="botonCrearUsuario">
+        <item name="android:layout_marginTop">@dimen/SeparacionElementosCrearUsuario</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/temaCrear</item>
+        <item name="android:text">@string/crearUsuario</item>
+    </style>
+
+    <!-- Pantalla Crear Usuario Horizontal -->
+
+    <style name="fotoCrearUsuarioHorizontal">
+        <item name="android:layout_width">@dimen/AnchoFotoCrearUsuarioHorizontal</item>
+        <item name="android:layout_height">@dimen/AltoFotoCrearUsuarioHorizontal</item>
+        <item name="android:layout_marginTop">@dimen/separacionElementosCrearHorizontal</item>
+    </style>
+    <style name="botonCrearUsuarioHorizontal">
+        <item name="android:layout_marginBottom">@dimen/separacionBotonCrearHorizontal</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/temaCrear</item>
+        <item name="android:text">@string/crearUsuario</item>
+    </style>
+    <style name="UsuarioCrearUsuarioHorizontal">
+        <item name="android:hint">@string/usuario</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:layout_marginTop">@dimen/separacionElementosCrearHorizontal</item>
+    </style>
+    <style name="ContraseñaCrearPerfilHorizontal">
+        <item name="android:hint">@string/contrasenia</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:layout_marginTop">@dimen/separacionElementosCrearHorizontal</item>
+    </style>
+
+    <!-- Pantalla Perfil -->
+
+    <style name="FotoPerfil">
         <item name="android:layout_width">@dimen/anchoFotoPerfil</item>
         <item name="android:layout_height">@dimen/altoFotoPerfil</item>
+        <item name="android:layout_marginTop">@dimen/separacionSuperiorFotoPerfil</item>
+    </style>
+    <style name="botonCambiarImagenPerfil">
+        <item name="android:text">@string/cambiarImagen</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">@dimen/separacionCambiarImagen</item>
+        <item name="android:backgroundTint">@color/temaCrear</item>
+    </style>
+    <style name="UsuarioPerfil">
+        <item name="android:layout_marginTop">@dimen/separacionUsuarioPerfil</item>
+        <item name="android:hint">@string/usuario</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+    <style name="ContraseñaPerfil">
+        <item name="android:layout_marginTop">@dimen/separacionContraseñaPerfil</item>
+        <item name="android:hint">@string/contrasenia</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+    <style name="EditarPerfil">
+        <item name="android:layout_marginTop">@dimen/separacionEditarPerfil</item>
+        <item name="android:text">@string/EditarCampos</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="GuardarCambiosPerfil">
+        <item name="android:layout_width">@dimen/botonGuardarCambiosAncho</item>
+        <item name="android:layout_height">@dimen/botonGuardarCambiosAlto</item>
+        <item name="android:layout_marginBottom">@dimen/separacionGuardarInferior</item>
+        <item name="android:text">@string/GuardarCambios</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 
-    <style name="crearUsuario">
-        <item name="android:backgroundTint">@color/white</item>
-        <item name="android:text">@string/crearUsuario</item>
-        <item name="android:textColor">@color/colorBotones</item>
-        <item name="android:textSize">@dimen/LetraBotones</item>
-    </style>
+    <!-- Pantalla Perfil Horizontal -->
 
+    <style name="FotoPerfilHorizontal">
+        <item name="android:layout_width">@dimen/imagenPerfilHorizontalAncho</item>
+        <item name="android:layout_height">@dimen/imagenPerfilHorizontalAlto</item>
+        <item name="android:layout_marginTop">@dimen/separacionFotoPerfilHorizontal</item>
+    </style>
+    <style name="botonCambiarImagenPerfilHorizontal">
+        <item name="android:layout_width">@dimen/cambiarImagenHorizontalAncho</item>
+        <item name="android:layout_height">@dimen/cambiarImagenHorizontalAlto</item>
+        <item name="android:layout_marginStart">@dimen/separacionCambiarImgHorizontalH</item>
+        <item name="android:layout_marginTop">@dimen/separacionCambiarImgHorizontalV</item>
+        <item name="android:backgroundTint">@color/temaCrear</item>
+        <item name="android:text">@string/cambiarImagen</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/tamañoLetraCambiarImgHorizontal</item>
+    </style>
+    <style name="UsuarioPerfilHorizontal">
+        <item name="android:layout_marginTop">@dimen/separacionElementosPerfilHorizontal</item>
+        <item name="android:hint">@string/usuario</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+    <style name="ContraseñaPerfilHorizontal">
+        <item name="android:layout_marginTop">@dimen/separacionElementosPerfilHorizontal</item>
+        <item name="android:hint">@string/contrasenia</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+    <style name="EditarPerfilHorizontal">
+        <item name="android:layout_marginTop">@dimen/separacionElementosPerfilHorizontal</item>
+        <item name="android:text">@string/EditarCampos</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="GuardarCambiosPerfilHorizontal">
+        <item name="android:layout_width">@dimen/botonGuardarCambiosAncho</item>
+        <item name="android:layout_height">@dimen/botonGuardarCambiosAlto</item>
+        <item name="android:layout_marginBottom">@dimen/separacionElementosPerfilHorizontal</item>
+        <item name="android:text">@string/GuardarCambios</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
 
 </resources>

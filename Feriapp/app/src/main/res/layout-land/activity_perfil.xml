@@ -9,68 +9,49 @@
 
     <EditText
         android:id="@+id/txtNuevoUsuario"
+        style="@style/UsuarioPerfilHorizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
         android:ems="10"
-        android:hint="@string/usuario"
-        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgFotoPerfil" />
 
     <EditText
         android:id="@+id/txtNuevaContrasenia"
+        style="@style/ContraseñaPerfilHorizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
         android:ems="10"
-        android:hint="@string/contrasenia"
-        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNuevoUsuario" />
 
     <Button
         android:id="@+id/btnCambiarFoto"
-        android:layout_width="130dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="52dp"
-        android:backgroundTint="@color/temaCrear"
-        android:text="@string/cambiarImagen"
-        android:textColor="@color/white"
-        android:textSize="8dp"
+        style="@style/botonCambiarImagenPerfilHorizontal"
         app:layout_constraintStart_toEndOf="@+id/imgFotoPerfil"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnEditarCampos"
+        style="@style/EditarPerfilHorizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="@string/EditarCampos"
-        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNuevaContrasenia" />
 
     <Button
         android:id="@+id/btnGuardarCambios"
-        android:layout_width="369dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="28dp"
-        android:text="@string/GuardarCambios"
-        android:textColor="#FFFFFF"
+        style="@style/GuardarCambiosPerfilHorizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imgFotoPerfil"
-        android:layout_width="95dp"
-        android:layout_height="97dp"
-        android:layout_marginTop="16dp"
+        style="@style/FotoPerfilHorizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

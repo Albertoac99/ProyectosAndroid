@@ -9,10 +9,7 @@
 
     <ImageView
         android:id="@+id/imgNuevaFotoPerfil"
-        style="@style/FotoDePerfil"
-        android:layout_width="84dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="16dp"
+        style="@style/fotoCrearUsuarioHorizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,9 +18,9 @@
 
     <EditText
         android:id="@+id/txtUsuarioRegistro"
+        style="@style/UsuarioCrearUsuarioHorizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/usuario"
         android:inputType="textPersonName"
@@ -33,9 +30,9 @@
 
     <EditText
         android:id="@+id/txtContraseniaRegistro"
+        style="@style/ContraseñaCrearPerfilHorizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/contrasenia"
         android:inputType="textPassword"
@@ -45,10 +42,9 @@
 
     <Button
         android:id="@+id/btnCrearUsuario"
-        style="@style/crearUsuario"
+        style="@style/botonCrearUsuarioHorizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
         android:backgroundTint="#BD1414"
         android:textColor="#FAFAFA"
         app:layout_constraintBottom_toBottomOf="parent"

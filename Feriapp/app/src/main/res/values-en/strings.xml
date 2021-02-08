@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Feriapp</string>
+    <string name="dueño">Stand owner</string>
+    <string name="perfil">Profile</string>
+    <string name="filtrar">Screen</string>
+    <string name="publica">Public stand</string>
+    <string name="usuario">Usser</string>
+    <string name="introducirDatos">Complete the followings fields</string>
+    <string name="registrarse">Sing up</string>
+    <string name="loguearse">Sing in</string>
+    <string name="crearUsuario">Create usser</string>
+    <string name="contrasenia">Password</string>
+    <string name="EditarCampos">Edit</string>
+    <string name="GuardarCambios">Save Changes</string>
+    <string name="cambiarImagen">Change Image</string>
+    <string name="cerrarSesion">Log out</string>
+    <string name="privada">Private Stand</string>
+    <string name="espacio">Stand with capacity</string>
+    <string name="casetaPublica">Public Stands</string>
+    <string name="casetaPrivada">Private Stands</string>
+    <string name="id">Id</string>
+    <string name="contrasenia2">Password</string>
+    <string name="tipoUsuario">Kind Usser</string>
+</resources>

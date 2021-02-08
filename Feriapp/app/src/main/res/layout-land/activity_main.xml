@@ -36,6 +36,7 @@
 
     <ImageView
         android:id="@+id/imgInicio"
+        style="@style/FotoInicioHorizontal"
         android:layout_width="111dp"
         android:layout_height="101dp"
         android:layout_marginTop="16dp"
@@ -46,6 +47,7 @@
 
     <EditText
         android:id="@+id/txtUsuarioLogueo"
+        style="@style/UsuarioInicioHorizontal"
         android:layout_width="210dp"
         android:layout_height="45dp"
         android:layout_marginTop="24dp"
@@ -59,6 +61,7 @@
 
     <EditText
         android:id="@+id/txtContraseñaLogueo"
+        style="@style/ContraseñaInicioHorizontal"
         android:layout_width="210dp"
         android:layout_height="45dp"
         android:layout_marginTop="24dp"
@@ -72,21 +75,13 @@
 
     <Button
         android:id="@+id/btnIniciaSesion"
-        style="@style/botonIniciarSesion"
-        android:layout_width="110dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="96dp"
-        android:layout_marginBottom="32dp"
+        style="@style/botonIniciarSesionHorizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView11" />
 
     <Button
         android:id="@+id/btnRegistro"
-        style="@style/botonRegistrar"
-        android:layout_width="110dp"
-        android:layout_height="35dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginBottom="32dp"
+        style="@style/botonRegistrarHorizontal"
         android:text="@string/registrarse"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView9" />
