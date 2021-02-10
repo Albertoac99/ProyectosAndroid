@@ -301,6 +301,7 @@ public class LogFeriapp {
                 .with(Perfil.context)
                 .load(url)
                 .apply(RequestOptions.centerCropTransform())
+                .skipMemoryCache(true)
                 .into(Perfil.imgFotoPerfil);
 
 
