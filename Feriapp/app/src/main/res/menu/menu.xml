@@ -18,6 +18,9 @@
             <item
                 android:id="@+id/itmEspacio"
                 android:title="@string/espacio" />
+            <item
+                android:id="@+id/itmTodas"
+                android:title="Todas" />
         </menu>
     </item>
     <item

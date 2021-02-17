@@ -95,6 +95,9 @@ public class ListaCasetas extends AppCompatActivity {
                 Intent intent1 = new Intent(getApplicationContext(), Inicio.class);
                 startActivity(intent1);
                 break;
+            case R.id.itmTodas:
+                ContListaCasetas.obtenerCasetas();
+                break;
 
         }
 
