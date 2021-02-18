@@ -21,6 +21,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.bumptech.glide.signature.ObjectKey;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -301,9 +302,9 @@ public class LogFeriapp {
                 .with(Perfil.context)
                 .load(url)
                 .apply(RequestOptions.centerCropTransform())
+                .signature(new ObjectKey(System.currentTimeMillis()))
                 .skipMemoryCache(true)
                 .into(Perfil.imgFotoPerfil);
-
 
 
     }
