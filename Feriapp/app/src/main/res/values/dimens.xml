@@ -75,4 +75,16 @@
     <dimen name="AnchoFotoCrearUsuarioHorizontal">84dp</dimen>
     <dimen name="AltoFotoCrearUsuarioHorizontal">100dp</dimen>
 
+    <!-- CardView -->
+
+    <dimen name="tamañoletraNombre">18dp</dimen>
+    <dimen name="tamañoletraMedio">12dp</dimen>
+    <dimen name="tamañoLetraInferior">14dp</dimen>
+
+    <dimen name="margenIzquierdo">15dp</dimen>
+    <dimen name="margenSuperior">15dp</dimen>
+    <dimen name="margenInferior">5dp</dimen>
+
+    <dimen name="widthIzquierdo">150dp</dimen>
+    <dimen name="widthDerecho">179dp</dimen>
 </resources>

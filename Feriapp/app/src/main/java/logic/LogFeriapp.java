@@ -99,7 +99,7 @@ public class LogFeriapp {
     public static void actualizarUsuario() {
         // Instruccion para actualizar el nombre y la contraseña de un usuario
         new ActualizarValor().execute("https://arandacastroalberto.000webhostapp.com/php/updateUsuario.php?usuarioNuevo="+Perfil.txtNuevoUsuario.getText().toString()
-                +"&contraseniaNueva="+Perfil.txtNuevaContrasenia.getText().toString()+"&usuario="+ cuentas.get(0).getUsuario());
+                +"&contraseniaNueva="+Perfil.txtNuevaContrasenia.getText().toString()+"&usuario="+ cuentas.getUsuario());
 
     }
 
@@ -188,18 +188,18 @@ public class LogFeriapp {
             Gson gson = new Gson();
 
             if(opcion == 1){
-                Type type = new TypeToken<List<Cuenta>>() {}.getType();
+                Type type = new TypeToken<Cuenta>() {}.getType();
 
                 cuentas = gson.fromJson(resultado, type);
 
 
-                if (Datos.cuentas.size()>0) {
+                if (Datos.cuentas != null) {
                     // Escribir en las Preferencias
                     SharedPreferences.Editor editorPreferencias = Inicio.pref.edit();
-                    editorPreferencias.putString("Id", ""+cuentas.get(0).getIdCuenta());
-                    editorPreferencias.putString("Usuario",cuentas.get(0).getUsuario());
-                    editorPreferencias.putString("Contrasenia",cuentas.get(0).getContrasenia());
-                    editorPreferencias.putString("TipoUsuario", ""+cuentas.get(0).getTipoUsuario());
+                    editorPreferencias.putString("Id", ""+cuentas.getIdCuenta());
+                    editorPreferencias.putString("Usuario",cuentas.getUsuario());
+                    editorPreferencias.putString("Contrasenia",cuentas.getContrasenia());
+                    editorPreferencias.putString("TipoUsuario", ""+cuentas.getTipoUsuario());
                     editorPreferencias.apply();
                     LogFeriapp.traerCasetas();
                 } else {
@@ -208,11 +208,11 @@ public class LogFeriapp {
 
             }
             else if(opcion ==2){
-                Type type = new TypeToken<List<Cuenta>>() {}.getType();
+                Type type = new TypeToken<Cuenta>() {}.getType();
 
                 cuentas = gson.fromJson(resultado, type);
 
-                if (Datos.cuentas.size()==0) {
+                if (Datos.cuentas == null) {
 
                     LogFeriapp.crearUsuario();
 
@@ -293,7 +293,7 @@ public class LogFeriapp {
 
     public static void download() {
 
-        String url = "https://arandacastroalberto.000webhostapp.com/php/imagenes/"+cuentas.get(0).getIdCuenta()+".jpg";
+        String url = "https://arandacastroalberto.000webhostapp.com/php/imagenes/"+cuentas.getIdCuenta()+".jpg";
 
         Perfil.imgFotoPerfil.setImageDrawable(null);
 

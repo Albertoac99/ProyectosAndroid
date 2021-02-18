@@ -106,7 +106,7 @@ public class CrearUsuario extends AppCompatActivity {
                 Hashtable<String, String> params = new Hashtable<>();
 
                 params.put("imagenData", getStringImage(Perfil.bitmap));
-                params.put("imagenName", ""+cuentas.get(0).getIdCuenta());
+                params.put("imagenName", ""+cuentas.getIdCuenta());
 
                 return params;
             }

@@ -11,8 +11,8 @@ public class ContPerfil {
 
     public static void cambiarUsuario() {
         LogFeriapp.actualizarUsuario();
-        cuentas.get(0).setUsuario(Perfil.txtNuevoUsuario.getText().toString());
-        cuentas.get(0).setContrasenia(Perfil.txtNuevaContrasenia.getText().toString());
+        cuentas.setUsuario(Perfil.txtNuevoUsuario.getText().toString());
+        cuentas.setContrasenia(Perfil.txtNuevaContrasenia.getText().toString());
     }
 
     public static void noEditable() {

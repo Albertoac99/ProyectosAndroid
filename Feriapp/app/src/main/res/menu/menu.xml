@@ -3,6 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/itmLeyenda"
+        android:title="@string/leyenda" />
+    <item
         android:id="@+id/itmPerfil"
         android:title="@string/perfil" />
     <item

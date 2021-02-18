@@ -46,6 +46,8 @@ public class AdaptadorCaseta extends RecyclerView.Adapter<AdaptadorCaseta.Holder
         holder.txtNombreCaseta.setText(Datos.casetas.get(position).getNombreCaseta());
         holder.txtAforoCaseta.setText("Aforo: "+Datos.casetas.get(position).getAforoActual()+"/"+casetas.get(position).getAforoMaximo());
         holder.txtHorarioCaseta.setText("Horario: "+Datos.casetas.get(position).getHorario());
+        holder.txtCalle.setText("Calle: "+ casetas.get(position).getNombreCalle());
+        holder.txtNumeroCaseta.setText("Numero: "+casetas.get(position).getNumeroCaseta());
 
         if(casetas.get(position).getTipoCaseta()==1){
             holder.imgCaseta.setImageResource(R.drawable.gitana);
@@ -54,15 +56,6 @@ public class AdaptadorCaseta extends RecyclerView.Adapter<AdaptadorCaseta.Holder
             holder.imgCaseta.setImageResource(R.drawable.gitanaverde);
         }
 
-        holder.cardCaseta.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                System.out.println("Informacion pulsada" +position);
-                Intent intent = new Intent(c, ListaCasetas.class);
-                posicion = position;
-                c.startActivity(intent);
-            }
-        });
     }
 
     @Override
@@ -77,6 +70,8 @@ public class AdaptadorCaseta extends RecyclerView.Adapter<AdaptadorCaseta.Holder
         TextView txtNombreCaseta;
         TextView txtAforoCaseta;
         TextView txtHorarioCaseta;
+        TextView txtCalle;
+        TextView txtNumeroCaseta;
         ImageView imgCaseta;
 
         public HolderCaseta(@NonNull View itemView) {
@@ -87,6 +82,8 @@ public class AdaptadorCaseta extends RecyclerView.Adapter<AdaptadorCaseta.Holder
             txtAforoCaseta = itemView.findViewById(R.id.txtAforoCaseta);
             txtHorarioCaseta = itemView.findViewById(R.id.txtHorarioCaseta);
             imgCaseta = itemView.findViewById(R.id.imgCaseta);
+            txtCalle = itemView.findViewById(R.id.txtCalle);
+            txtNumeroCaseta = itemView.findViewById(R.id.txtNumeroCaseta);
         }
 
 

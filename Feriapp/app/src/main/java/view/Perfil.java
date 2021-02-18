@@ -58,8 +58,8 @@ public class Perfil extends AppCompatActivity {
         ContPerfil.noEditable();
 
         ContPerfil.downloadFoto();
-        txtNuevoUsuario.setText(Datos.cuentas.get(0).getUsuario());
-        txtNuevaContrasenia.setText(Datos.cuentas.get(0).getContrasenia());
+        txtNuevoUsuario.setText(Datos.cuentas.getUsuario());
+        txtNuevaContrasenia.setText(Datos.cuentas.getContrasenia());
 
         btnEditar.setOnClickListener(v ->{
             ContPerfil.editar();
@@ -121,7 +121,7 @@ public class Perfil extends AppCompatActivity {
                 Hashtable<String, String> params = new Hashtable<>();
 
                 params.put("imagenData", getStringImage(Perfil.bitmap));
-                params.put("imagenName", ""+cuentas.get(0).getIdCuenta());
+                params.put("imagenName", ""+cuentas.getIdCuenta());
 
                 return params;
             }

@@ -14,37 +14,37 @@
         tools:layout_editor_absoluteY="0dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imgPrivate"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="64dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/txtPrivate"
         app:srcCompat="@drawable/gitana" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imgPublic"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/txtPublic"
         app:srcCompat="@drawable/gitanaverde" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtPrivate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="20dp"
         android:text="@string/casetaPrivada"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintBottom_toTopOf="@+id/txtPublic"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtPublic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="28dp"

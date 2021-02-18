@@ -31,9 +31,7 @@ public class ContInicio {
         String contrasenia = Inicio.pref.getString("Contrasenia", "");
         String tipoUsuario = Inicio.pref.getString("TipoUsuario", "");
         if(!id.equals("") && !usuario.equals("") && !contrasenia.equals("") && !tipoUsuario.equals("")){
-            List<Cuenta> listCuentas = new ArrayList<>();
-            listCuentas.add(new Cuenta(Integer.parseInt(id),usuario,contrasenia,Integer.parseInt(tipoUsuario)));
-            Datos.cuentas = listCuentas;
+            Datos.cuentas = new Cuenta(Integer.parseInt(id),usuario,contrasenia,Integer.parseInt(tipoUsuario));
             LogFeriapp.traerCasetas();
         }
     }

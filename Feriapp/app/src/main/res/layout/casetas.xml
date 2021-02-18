@@ -35,11 +35,35 @@
                     android:id="@+id/txtNombreCaseta"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/margenIzquierdo"
+                    android:layout_marginTop="@dimen/margenSuperior"
+                    android:layout_marginBottom="@dimen/margenInferior"
                     android:text="Caseta "
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/tamañoletraNombre" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtNumeroCaseta"
+                        android:layout_width="@dimen/widthIzquierdo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margenIzquierdo"
+                        android:layout_weight="1"
+                        android:text="Numero: "
+                        android:textSize="@dimen/tamañoletraMedio" />
+
+                    <TextView
+                        android:id="@+id/txtCalle"
+                        android:layout_width="@dimen/widthDerecho"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Calle: "
+                        android:textSize="@dimen/tamañoletraMedio" />
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -48,18 +72,17 @@
 
                     <TextView
                         android:id="@+id/txtAforoCaseta"
-                        android:layout_width="135dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginBottom="15dp"
+                        android:layout_width="@dimen/widthIzquierdo"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margenIzquierdo"
+                        android:layout_marginBottom="@dimen/margenInferior"
                         android:text="Aforo: " />
 
                     <TextView
                         android:id="@+id/txtHorarioCaseta"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="15dp"
-                        android:layout_marginBottom="15dp"
+                        android:layout_width="@dimen/widthDerecho"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/margenInferior"
                         android:layout_weight="1"
                         android:text="Horario: " />
                 </LinearLayout>

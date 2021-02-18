@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.aranda.feriapp.R;
@@ -71,6 +72,20 @@ public class ListaCasetas extends AppCompatActivity {
 
         switch (item.getItemId()){
 
+            case R.id.itmLeyenda:
+                if(findViewById(R.id.imgPrivate).getVisibility()==View.VISIBLE){
+                    findViewById(R.id.txtPrivate).setVisibility(View.INVISIBLE);
+                    findViewById(R.id.imgPrivate).setVisibility(View.INVISIBLE);
+                    findViewById(R.id.imgPublic).setVisibility(View.INVISIBLE);
+                    findViewById(R.id.txtPublic).setVisibility(View.INVISIBLE);
+                }
+                else{
+                    findViewById(R.id.txtPrivate).setVisibility(View.VISIBLE);
+                    findViewById(R.id.imgPrivate).setVisibility(View.VISIBLE);
+                    findViewById(R.id.imgPublic).setVisibility(View.VISIBLE);
+                    findViewById(R.id.txtPublic).setVisibility(View.VISIBLE);
+                }
+                break;
             case R.id.itmPerfil:
                 Intent intent = new Intent(getApplicationContext(),Perfil.class);
                 startActivity(intent);
