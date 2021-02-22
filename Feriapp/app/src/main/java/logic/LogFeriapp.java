@@ -23,6 +23,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.signature.ObjectKey;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.BufferedReader;
@@ -187,6 +188,7 @@ public class LogFeriapp {
             super.onPostExecute(aVoid);
 
             Gson gson = new Gson();
+
 
             if(opcion == 1){
                 Type type = new TypeToken<Cuenta>() {}.getType();
